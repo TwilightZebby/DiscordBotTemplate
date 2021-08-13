@@ -3,8 +3,8 @@ const { client } = require('../constants.js');
 
 
 module.exports = {
-    name: 'commandName',
-    description: `A Description of the command`,
+    name: 'test',
+    description: `Text Context Command`,
     
     // Cooldown is in seconds
     cooldown: 3,
@@ -32,7 +32,7 @@ module.exports = {
      */
     async execute(contextInteraction) {
 
-        //.
+        return await contextInteraction.reply({ content: `Context Test Successful!`, ephemeral: true });
 
     }
 }
