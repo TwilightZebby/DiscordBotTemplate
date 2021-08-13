@@ -11,6 +11,7 @@ const { CONFIG, TOKEN, ErrorLogChannelID, ErrorLogGuildID } = require("./config.
 // MAPS / COLLECTIONS
 client.commands = new Discord.Collection();
 client.slashCommands = new Discord.Collection();
+client.contextCommands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
 client.slashCooldowns = new Discord.Collection();
 
@@ -32,6 +33,16 @@ for ( const file of slashCommandFiles )
 {
     const tempSlash = require(`./slashCommands/${file}`);
     client.slashCommands.set(tempSlash.name, tempSlash);
+}
+
+
+// BRING IN CONTEXT COMMANDS
+const contextCommandFiles = fs.readdirSync('./contextCommands').filter(file => file.endsWith('.js'));
+
+for ( const file of contextCommandFiles )
+{
+    const tempContext = require(`./contextCommands/${file}`);
+    client.contextCommands.set(tempContext.name, tempContext);
 }
 
 
@@ -237,11 +248,12 @@ client.on('messageCreate', async (message) => {
 
 
 /******************************************************************************* */
-// INTERACTION CREATE EVENT (when a Slash Command, Button, Select Menu is used)
+// INTERACTION CREATE EVENT (when a Slash Command, Button, Select Menu, Context Command is used)
 
 const SlashCommandHandler = require('./modules/slashCommandHandler.js');
 const ButtonHandler = require('./modules/buttonHandler.js');
 const SelectMenuHandler = require('./modules/selectMenuHandler.js');
+const ContextCommandHandler = require('./modules/contextCommandHandler.js');
 
 client.on('interactionCreate', async (interaction) => {
 
@@ -260,9 +272,14 @@ client.on('interactionCreate', async (interaction) => {
         // Is a Select Menu (aka Dropdown)
         return await SelectMenuHandler.Main(interaction);
     }
+    else if ( interaction.isContextMenu() )
+    {
+        // Is a Context Command (either User- or Message-based)
+        return await ContextCommandHandler.Main(interaction);
+    }
     else
     {
-        // Is neither of the three above types
+        // Is neither of the four above types
         return;
     }
 
