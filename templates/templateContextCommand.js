@@ -19,6 +19,7 @@ module.exports = {
         const data = {};
         data.name = this.name;
         data.description = "";
+        data.type = ""; // Either "USER" or "MESSAGE"
 
         return data;
 

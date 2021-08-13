@@ -28,6 +28,7 @@ module.exports = {
         const data = {};
         data.name = this.name;
         data.description = this.description;
+        data.type = "CHAT_INPUT"; // Slash Command
 
         return data;
 
