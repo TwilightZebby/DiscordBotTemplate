@@ -1,6 +1,6 @@
 // Imports
 const Discord = require('discord.js');
-const fs = require('fs');
+//const fs = require('fs');
 const { client } = require('../constants.js');
 const CONSTANTS = require('../constants.js');
 const { PREFIX, TwilightZebbyID } = require('../config.js');

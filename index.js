@@ -15,7 +15,11 @@ client.slashCommands = new Discord.Collection();
 client.contextCommands = new Discord.Collection();
 client.buttons = new Discord.Collection();
 client.selects = new Discord.Collection();
+
 client.cooldowns = new Discord.Collection();
+client.slashCooldowns = new Discord.Collection();
+client.contextCooldowns = new Discord.Collection();
+client.buttonCooldowns = new Discord.Collection();
 
 
 // BRING IN ALL THE COMMANDS AND INTERACTIONS
