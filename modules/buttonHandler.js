@@ -16,7 +16,7 @@ module.exports = {
     async Main(buttonInteraction)
     {
         let buttonCustomID = buttonInteraction.customId.split("_").shift();
-        const button = client.selects.get(buttonInteraction.selectMenuCustomID);
+        const button = client.buttons.get(buttonCustomID);
 
         if ( !button )
         {

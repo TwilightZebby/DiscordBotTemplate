@@ -16,7 +16,7 @@ module.exports = {
     async Main(selectMenuInteraction)
     {
         let selectMenuCustomID = selectMenuInteraction.customId.split("_").shift();
-        const selectMenu = client.selects.get(selectMenuInteraction.selectMenuCustomID);
+        const selectMenu = client.selects.get(selectMenuCustomID);
 
         if ( !selectMenu )
         {
