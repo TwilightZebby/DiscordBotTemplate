@@ -20,6 +20,7 @@ client.cooldowns = new Discord.Collection();
 client.slashCooldowns = new Discord.Collection();
 client.contextCooldowns = new Discord.Collection();
 client.buttonCooldowns = new Discord.Collection();
+client.selectCooldowns = new Discord.Collection();
 
 
 // BRING IN ALL THE COMMANDS AND INTERACTIONS
