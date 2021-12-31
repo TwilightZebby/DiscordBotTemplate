@@ -5,7 +5,7 @@ const Discord = require("discord.js");
 module.exports = {
     // Discord Client representing the Bot
     client: new Discord.Client({ intents: [ Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES, Discord.Intents.FLAGS.GUILD_INTEGRATIONS ] }),
-
+    
 
     // STRINGS
     errorMessages: {
