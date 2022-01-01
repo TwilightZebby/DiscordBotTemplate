@@ -161,6 +161,20 @@ module.exports = {
                         let cooldownMessage = CONSTANTS.errorMessages.TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more hours`).replace("{{commandName}}", `**${command.name}**`);
                         return await message.reply({ content: cooldownMessage, allowedMentions: { parse: [], repliedUser: false } });
                     }
+                    // Days
+                    else if ( timeLeft >= 86400 && timeLeft < 2.628e+6 )
+                    {
+                        timeLeft /= 86400;
+                        let cooldownMessage = CONSTANTS.errorMessages.TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more days`).replace("{{commandName}}", `**${command.name}**`);
+                        return await message.reply({ content: cooldownMessage, allowedMentions: { parse: [], repliedUser: false } });
+                    }
+                    // Months
+                    else if ( timeLeft >= 2.628e+6 )
+                    {
+                        timeLeft /= 2.628e+6;
+                        let cooldownMessage = CONSTANTS.errorMessages.TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more months`).replace("{{commandName}}", `**${command.name}**`);
+                        return await message.reply({ content: cooldownMessage, allowedMentions: { parse: [], repliedUser: false } });
+                    }
                     // Seconds
                     else
                     {
