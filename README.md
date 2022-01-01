@@ -10,3 +10,16 @@ A simple template Discord Bot for myself.
     - `./selects/`
     - `./slashCommands/`
     - `./textCommands/`
+3. Create a `config.js` file ***in the root***, with the following information:
+
+```js
+exports.TOKEN = 'BOT-TOKEN'; // Your Discord Bot's Token, found on Developer Porta
+
+exports.PREFIX = 't%'; // Prefix for TEXT BASED Commands
+
+exports.ErrorLogChannelID = "channelID"; // Channel ID for where errors are logged
+
+exports.ErrorLogGuildID = "guildID"; // Guild ID that the above Channel is in
+
+exports.TwilightZebbyID = "zebbyID"; // Zebby's Discord User ID - for his "me only" commands
+```
