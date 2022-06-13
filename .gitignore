@@ -1,4 +1,9 @@
 /node_modules
 config.js
 /.vscode
-/hiddenJsonFiles
+
+/jsonFiles
+
+/textCommands/shutdown.js
+
+/buttons/shutdown.js

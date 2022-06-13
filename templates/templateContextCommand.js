@@ -8,9 +8,9 @@ module.exports = {
     // Context Command's Name, can be mixed case and allows for spaces
     // If the command name has a space, use an underscore (_) for the file name
     name: 'Command Name',
-    // Context Command's description, used for Help (text) Command
+    // Context Command's description
     description: `Description`,
-    // Category of Context Command, used for Help (text) Command
+    // Category of Context Command
     category: 'general',
 
     // Context Command's Cooldown, in seconds
@@ -23,7 +23,7 @@ module.exports = {
      * 
      * @returns {Discord.ApplicationCommandData}
      */
-    async registerData()
+    registerData()
     {
         const data = {};
 
@@ -45,8 +45,6 @@ module.exports = {
      */
     async execute(contextCommand)
     {
-
         // .
-
     }
 };
