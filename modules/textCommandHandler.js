@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 const { client } = require('../constants.js');
 const CONSTANTS = require('../constants.js');
 const { PREFIX, TwilightZebbyID } = require('../config.js');
+const TextCommandAllowLists = require('../jsonFiles/commandAllowList.json');
 
 module.exports = {
     /**
@@ -29,7 +30,7 @@ module.exports = {
             // Slice off Prefix and assemble command
             const [, matchedPrefix] = message.content.match(prefixRegex);
             const arguments = message.content.slice(matchedPrefix.length).trim().split(/ +/);
-            const commandName = args.shift().toLowerCase();
+            const commandName = arguments.shift().toLowerCase();
             const command = client.textCommands.get(commandName);
 
             if ( !command )
@@ -84,9 +85,16 @@ module.exports = {
 
                     case "moderator":
                         // Those with Moderator-level permissions, Admin Permission, Server Owners, and TwilightZebby can use
-                        if ( message.author.id !== TwilightZebbyID && message.author.id !== message.guild.ownerId && !message.member.permissions.has("ADMINISTRATOR") && ( !message.member.permissions.has("BAN_MEMBERS") || !message.member.permissions.has("KICK_MEMBERS") || !message.member.permissions.has("MANAGE_CHANNELS") || !message.member.permissions.has("MANAGE_GUILD") || !message.member.permissions.has("MANAGE_MESSAGES") || !message.member.permissions.has("MANAGE_ROLES") || !message.member.permissions.has("MANAGE_THREADS") || !message.member.permissions.has("MODERATE_MEMBERS")) )
+                        if ( message.author.id !== TwilightZebbyID && message.author.id !== message.guild.ownerId && !message.member.permissions.has("ADMINISTRATOR") && !message.member.permissions.has("BAN_MEMBERS") && !message.member.permissions.has("KICK_MEMBERS") && !message.member.permissions.has("MANAGE_CHANNELS") && !message.member.permissions.has("MANAGE_GUILD") && !message.member.permissions.has("MANAGE_MESSAGES") && !message.member.permissions.has("MANAGE_ROLES") && !message.member.permissions.has("MANAGE_THREADS") && !message.member.permissions.has("MODERATE_MEMBERS") )
                         {
                             return await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_NO_PERMISSION_MODERATOR, allowedMentions: { parse: [], repliedUser: false } });
+                        }
+
+                    case "private":
+                        // Check per-Command per-User Allow List to see if User has been granted permission to use this Command
+                        if ( !TextCommandAllowLists[`${commandName}`]?.includes(message.author.id) )
+                        {
+                            return await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_NO_PERMISSION_GENERIC, allowedMentions: { parse: [], repliedUser: false } });
                         }
 
                     case "everyone":
@@ -200,7 +208,7 @@ module.exports = {
             catch (err)
             {
                 console.error(err);
-                await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_GENERIC_FAILED, allowedMentions: { parse: [], repliedUser: false } });
+                await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_GENERIC_FAILED.replace("{{commandName}}", `**${command.name}**`), allowedMentions: { parse: [], repliedUser: false } });
             }
 
             return;

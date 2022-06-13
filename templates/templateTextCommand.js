@@ -9,7 +9,7 @@ module.exports = {
     name: 'commandName',
     // Description of command
     description: `Description`,
-    // Category of Command, used for Help Command
+    // Category of Command
     category: 'general',
 
     // Alias(es) of command, if any
@@ -44,6 +44,7 @@ module.exports = {
     //    - "owner" for Guild Owners & TwilightZebby
     //    - "admin" for those with the ADMIN Guild Permission, Guild Owners, & TwilightZebby
     //    - "moderator" for those with Moderator-level Guild Permissions, Admins, Guild Owners, & TwilightZebby
+    //    - "private" for those TwilightZebby explicitly grants permission to use on a per-User allowlist basis. This is non-linear as the above permissions do NOT override this
     //    - "everyone" (or commented out) for everyone to use this command
     limitation: "everyone",
 
@@ -57,8 +58,6 @@ module.exports = {
      */
     async execute(message, arguments)
     {
-
         // .
-
     }
 };

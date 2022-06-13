@@ -23,8 +23,6 @@ module.exports = {
      */
     async execute(buttonInteraction)
     {
-
         // .
-
     }
 };

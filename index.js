@@ -7,6 +7,7 @@ const Discord = require('discord.js');
 const CONSTANTS = require('./constants.js'); // Mostly for the strings
 const { client } = require('./constants.js'); // Makes things easier
 const CONFIG = require('./config.js');
+const UTILITY = require('./modules/utilityModule.js');
 
 
 // MAPS AND COLLECTIONS
@@ -15,6 +16,7 @@ client.slashCommands = new Discord.Collection();
 client.contextCommands = new Discord.Collection();
 client.buttons = new Discord.Collection();
 client.selects = new Discord.Collection();
+client.modals = new Discord.Collection();
 
 client.cooldowns = new Discord.Collection();
 client.slashCooldowns = new Discord.Collection();
@@ -64,6 +66,14 @@ for ( const file of selectFiles )
     client.selects.set(tempCMD.name, tempCMD);
 }
 
+// Modals
+const modalFiles = fs.readdirSync('./modals').filter(file => file.endsWith('.js'));
+for ( const file of modalFiles )
+{
+    const tempCMD = require(`./modals/${file}`);
+    client.modals.set(tempCMD.name, tempCMD);
+}
+
 
 
 
@@ -106,10 +116,10 @@ process.on('warning', (warning) => { return console.warn("***WARNING: ", warning
 client.on('warn', (warning) => { return console.warn("***DISCORD WARNING: ", warning) });
 
 // Unhandled Promise Rejections
-process.on('unhandledRejection', (err) => { return console.error("******UNHANDLED PROMISE REJECTION: ", error) });
+process.on('unhandledRejection', (err) => { return console.error("******UNHANDLED PROMISE REJECTION: ", err) });
 
 // Discord Errors
-client.on('error', (err) => { return console.error("******DISCORD ERROR: ", error) });
+client.on('error', (err) => { return console.error("******DISCORD ERROR: ", err) });
 
 // Discord Rate Limit
 // Uncomment only for debugging purposes
@@ -136,7 +146,13 @@ client.on('error', (err) => { return console.error("******DISCORD ERROR: ", erro
 /******************************************************************************* */
 // DISCORD - MESSAGE CREATE EVENT
 const TextCommandHandler = require('./modules/textCommandHandler.js');
+
 client.on('messageCreate', async (message) => {
+    //console.log(`MESSAGE_CREATE\n\n${message.channel}\n***********************************************************************************`);
+
+    // Ignore Partial Messages
+    if ( message.partial ) { return; }
+
     // Prevent other Bots and Discord's System stuff from triggering this Bot
     if ( message.author.bot || message.system || message.author.system ) { return; }
 
@@ -152,7 +168,7 @@ client.on('messageCreate', async (message) => {
     let textCommandSuccess = await TextCommandHandler.Main(message);
     if ( textCommandSuccess === false )
     {
-        // No command prefix detected, ignore
+        // No command prefix detected
         return;
     }
     else if ( textCommandSuccess !== false && textCommandSuccess !== true )
@@ -201,8 +217,12 @@ const SlashCommandHandler = require('./modules/slashCommandHandler.js');
 const ButtonHandler = require('./modules/buttonHandler.js');
 const SelectMenuHandler = require('./modules/selectMenuHandler.js');
 const ContextCommandHandler = require('./modules/contextCommandHandler.js');
+const ModelHandler = require('./modules/modalHandler.js');
+const AutocompleteHandler = require('./modules/autocompleteHandler.js');
 
 client.on('interactionCreate', async (interaction) => {
+    //console.log(`INTERACTION_CREATE\n\n${interaction.channel}\n***********************************************************************************`);
+
     if ( interaction.isCommand() )
     {
         // Is a Slash Command
@@ -223,10 +243,20 @@ client.on('interactionCreate', async (interaction) => {
         // Is a Select Component
         return await SelectMenuHandler.Main(interaction);
     }
+    else if ( interaction.isModalSubmit() )
+    {
+        // Is an Input Modal
+        return await ModelHandler.Main(interaction);
+    }
+    else if ( interaction.isAutocomplete() )
+    {
+        // Is Autocomplete
+        return await AutocompleteHandler.Main(interaction);
+    }
     else
     {
         // Is none of the above types
-        return console.log(`Unrecongised or new Interaction type triggered`);
+        return console.log(`Unrecognised or new unhandled Interaction type triggered`);
     }
 });
 

@@ -9,7 +9,7 @@ module.exports = {
     name: 'commandname',
     // Slash Command's description
     description: `Description`,
-    // Category of Slash Command, used for Help (text) Command
+    // Category of Slash Command
     category: 'general',
 
     // Slash Command's Cooldown, in seconds
@@ -22,7 +22,7 @@ module.exports = {
      * 
      * @returns {Discord.ChatInputApplicationCommandData}
      */
-    async registerData()
+    registerData()
     {
         const data = {};
 
@@ -44,8 +44,6 @@ module.exports = {
      */
     async execute(slashCommand)
     {
-
         // .
-
     }
 };
