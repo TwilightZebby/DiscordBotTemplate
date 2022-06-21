@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 //const fs = require('fs');
 const { client } = require('../constants.js');
 const CONSTANTS = require('../constants.js');
-const { PREFIX, TwilightZebbyID } = require('../config.js');
+const { PREFIX, BotDevID } = require('../config.js');
 const TextCommandAllowLists = require('../jsonFiles/commandAllowList.json');
 
 module.exports = {
@@ -62,7 +62,7 @@ module.exports = {
                 {
                     case "developer":
                         // Only TwilightZebby, the Bot's Developer, can use
-                        if ( message.author.id !== TwilightZebbyID )
+                        if ( message.author.id !== BotDevID )
                         {
                             return await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_NO_PERMISSION_DEVELOPER, allowedMentions: { parse: [], repliedUser: false } });
                         }
@@ -70,7 +70,7 @@ module.exports = {
 
                     case "owner":
                         // Server Owners and TwilightZebby can use
-                        if ( message.author.id !== TwilightZebbyID && message.author.id !== message.guild.ownerId )
+                        if ( message.author.id !== BotDevID && message.author.id !== message.guild.ownerId )
                         {
                             return await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_NO_PERMISSION_OWNER, allowedMentions: { parse: [], repliedUser: false } });
                         }
@@ -78,14 +78,14 @@ module.exports = {
 
                     case "admin":
                         // Server Owners, those with Admin Permission, and TwilightZebby can use
-                        if ( message.author.id !== TwilightZebbyID && message.author.id !== message.guild.ownerId && !message.member.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR) )
+                        if ( message.author.id !== BotDevID && message.author.id !== message.guild.ownerId && !message.member.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR) )
                         {
                             return await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_NO_PERMISSION_ADMIN, allowedMentions: { parse: [], repliedUser: false } });
                         }
 
                     case "moderator":
                         // Those with Moderator-level permissions, Admin Permission, Server Owners, and TwilightZebby can use
-                        if ( message.author.id !== TwilightZebbyID && message.author.id !== message.guild.ownerId && !message.member.permissions.has("ADMINISTRATOR") && !message.member.permissions.has("BAN_MEMBERS") && !message.member.permissions.has("KICK_MEMBERS") && !message.member.permissions.has("MANAGE_CHANNELS") && !message.member.permissions.has("MANAGE_GUILD") && !message.member.permissions.has("MANAGE_MESSAGES") && !message.member.permissions.has("MANAGE_ROLES") && !message.member.permissions.has("MANAGE_THREADS") && !message.member.permissions.has("MODERATE_MEMBERS") )
+                        if ( message.author.id !== BotDevID && message.author.id !== message.guild.ownerId && !message.member.permissions.has("ADMINISTRATOR") && !message.member.permissions.has("BAN_MEMBERS") && !message.member.permissions.has("KICK_MEMBERS") && !message.member.permissions.has("MANAGE_CHANNELS") && !message.member.permissions.has("MANAGE_GUILD") && !message.member.permissions.has("MANAGE_MESSAGES") && !message.member.permissions.has("MANAGE_ROLES") && !message.member.permissions.has("MANAGE_THREADS") && !message.member.permissions.has("MODERATE_MEMBERS") )
                         {
                             return await message.reply({ content: CONSTANTS.errorMessages.TEXT_COMMAND_NO_PERMISSION_MODERATOR, allowedMentions: { parse: [], repliedUser: false } });
                         }

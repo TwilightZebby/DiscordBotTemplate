@@ -18,7 +18,7 @@ exports.TOKEN = 'BOT-TOKEN'; // Your Discord Bot's Token, found on Developer Por
 
 exports.PREFIX = 't%'; // Prefix for TEXT BASED Commands
 
-exports.TwilightZebbyID = "zebbyID"; // Zebby's Discord User ID - for his "me only" commands, feel free to rename using Find/Replace
+exports.BotDevID = "zebbyID"; // Discord User ID of the Bot's Developer - for "Bot Developer Only" commands
 ```
 
 4. Create an empty `commandAllowList.json` file in the `./jsonFiles/` Folder. (Create Folder if need be too)
