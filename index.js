@@ -140,3 +140,14 @@ DiscordClient.on('messageCreate', async (message) => {
         return;
     }
 });
+
+
+
+
+
+
+
+
+/******************************************************************************* */
+
+DiscordClient.login(Config.TOKEN);
