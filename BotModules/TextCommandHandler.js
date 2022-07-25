@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const { PermissionFlagsBits } = require("discord.js");
+const { PermissionFlagsBits, time } = require("discord.js");
 const { DiscordClient, Collections } = await import("../constants.js");
 const LocalizedStrings = await import("../JsonFiles/errorMessages.json");
 const Config = await import("../config.js");
@@ -86,6 +86,104 @@ module.exports = {
                         break;
                 }
             }
+
+
+
+            // Command Argument Checks
+            // Required Arguments Check
+            if ( Command.ArgumentsRequired && ( !Arguments.length || Arguments.length === 0 ) )
+            {
+                return await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: LocalizedStrings["en-GB"].TEXT_COMMAND_ARGUMENTS_REQUIRED });
+            }
+
+            // Minimum Arguments Check
+            if ( Command.ArgumentsRequired && Arguments.length < Command.MinimumArguments )
+            {
+                let minArgErrMsg = LocalizedStrings["en-GB"].TEXT_COMMAND_ARGUMENTS_MINIMUM.replace("{{minimumArguments}}", Command.MinimumArguments).replace("{{givenArguments}}", Arguments.length);
+                return await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: minArgErrMsg });
+            }
+
+            // Maximum Arguments Check
+            if ( Arguments.length > Command.MaximumArguments )
+            {
+                let maxArgErrMsg = LocalizedStrings["en-GB"].TEXT_COMMAND_ARGUMENTS_MAXIMUM.replace("{{maximumArguments}}", Command.MaximumArguments).replace("{{givenArguments}}", Arguments.length);
+            }
+
+
+
+            // Cooldown Checks
+            if ( !Collections.TextCooldowns.has(Command.Name) )
+            {
+                // No active cooldown, start a new one
+                Collections.TextCooldowns.set(Command.Name, new Discord.Collection());
+            }
+
+            // Set initial values
+            const Now = Date.now();
+            /** @type {Discord.Collection} */
+            const Timestamps = Collections.TextCooldowns.get(Command.Name);
+            const CooldownAmount = ( Command.Cooldown || 3 ) * 1000;
+
+            // Cooldown
+            if ( Timestamps.has(message.author.id) )
+            {
+                // Cooldown hit, tell User to cool off a little hehe
+                const ExpirationTime = Timestamps.get(message.author.id) + CooldownAmount;
+
+                if ( Now < ExpirationTime )
+                {
+                    let timeLeft = ( ExpirationTime - Now ) / 1000; // How much time is left of cooldown, in seconds
+
+                    switch (timeLeft)
+                    {
+                        // MINUTES
+                        case timeLeft >= 60 && timeLeft < 3600:
+                            timeLeft = timeLeft / 60; // For UX
+                            let cooldownMinutesMessage = LocalizedStrings["en-GB"].TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more minutes`);
+                            return await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: cooldownMinutesMessage });
+
+                        // HOURS
+                        case timeLeft >= 3600 && timeLeft < 86400:
+                            timeLeft = timeLeft / 3600; // For UX
+                            let cooldownHoursMessage = LocalizedStrings["en-GB"].TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more hours`);
+                            return await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: cooldownHoursMessage });
+
+                        // DAYS
+                        case timeLeft >= 86400 && timeLeft < 2.628e+6:
+                            timeLeft = timeLeft / 86400; // For UX
+                            let cooldownDaysMessage = LocalizedStrings["en-GB"].TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more days`);
+                            return await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: cooldownDaysMessage });
+
+                        // MONTHS
+                        case timeLeft >= 2.628e+6:
+                            timeLeft = timeLeft / 2.628e+6; // For UX
+                            let cooldownMonthsMessage = LocalizedStrings["en-GB"].TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more months`);
+                            return await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: cooldownMonthsMessage });
+
+                        // SECONDS
+                        default:
+                            let cooldownSecondsMessage = LocalizedStrings["en-GB"].TEXT_COMMAND_COOLDOWN.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)} more seconds`);
+                            return await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: cooldownSecondsMessage });
+                    }
+                }
+            }
+            else
+            {
+                Timestamps.set(message.author.id, Now);
+                setTimeout(() => Timestamps.delete(message.author.id), CooldownAmount);
+            }
+
+
+
+            // Attempt to run Command
+            try { await Command.Execute(message, Arguments); }
+            catch (err)
+            {
+                //console.error(err);
+                await message.reply({ allowedMentions: { parse: [], repliedUser: false }, content: LocalizedStrings["en-GB"].TEXT_COMMAND_GENERIC_FAILED });
+            }
+
+            return;
         }
     }
 }

@@ -102,3 +102,41 @@ DiscordClient.on('error', (err) => { return console.error("***DISCORD ERROR: ", 
 
 /******************************************************************************* */
 // DISCORD - MESSAGE CREATE EVENT
+const TextCommandHandler = await import("./BotModules/TextCommandHandler.js");
+
+DiscordClient.on('messageCreate', async (message) => {
+    // Partials
+    if ( message.partial ) { return; }
+
+    // Bots
+    if ( message.author.bot ) { return; }
+
+    // System Messages
+    if ( message.system || message.author.system ) { return; }
+
+    // DM Channel Messages
+    if ( message.channel instanceof Discord.DMChannel ) { return; }
+
+    // Safe-guard against Discord Outages
+    if ( !message.guild.available ) { return; }
+
+
+
+    // Check for (and handle) Commands
+    let textCommandStatus = await TextCommandHandler.Main(message);
+    if ( textCommandStatus === false )
+    {
+        // No Command detected
+        return;
+    }
+    else if ( textCommandStatus === null )
+    {
+        // Prefix was detected, but wasn't a command on the bot
+        return;
+    }
+    else
+    {
+        // Command failed or successful
+        return;
+    }
+});
