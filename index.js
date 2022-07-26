@@ -2,7 +2,7 @@ const Discord = await import("discord.js");
 const fs = await import("fs");
 
 const { DiscordClient, Collections } = await import("./constants.js");
-const LocalizedStrings = await import("./JsonFiles/errorMessages.json");
+const LocalizedErrors = await import("./JsonFiles/errorMessages.json");
 const Config = await import("./config.js");
 
 

@@ -5,7 +5,7 @@
         "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
-        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
         "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
         "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
         "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
@@ -23,7 +23,7 @@
         "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
 
         "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
-        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
         "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
         "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
         "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
@@ -33,17 +33,1444 @@
         "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
 
         "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
-        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
         "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
 
         "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
-        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
         "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
 
         "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
-        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
         "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
 
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "en-US":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "bg":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "zh-CN":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "zh-TW":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "hr":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "cs":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "da":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "fi":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "fr":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "de":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "el":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "hi":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "hu":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "it":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "ja":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "ko":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "lt":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "no":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "pl":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "pt-BR":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "ro":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "ru":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "es-ES":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "sv-SE":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "th":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "tr":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "uk":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
+
+        "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+    },
+
+
+
+    "vi":
+    {
+        "GENERIC": "Whoops! Something went wrong! Feel free to try again in a few moments.",
+        "GENERIC_RARE": "Whoops, something went wrong! Feel free to try again in a few moments - if you keep seeing this error then please contact TwilightZebby#1955 (the developer of this Bot).",
+
+        "TEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.",
+        "TEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Command. Please try again in a few moments.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "TEXT_COMMAND_DMS_ONLY": "Sorry, but that Command can only be used in DMs with me.",
+        "TEXT_COMMAND_GUILDS_ONLY": "Sorry, but that Command can only be used in Servers, not in DMs with me.",
+        "TEXT_COMMAND_NO_PERMISSION_DEVELOPER": "Sorry, but that Command can only be used by my developer!",
+        "TEXT_COMMAND_NO_PERMISSION_OWNER": "Sorry, but that Command can only be used by the Owner of this Server!",
+        "TEXT_COMMAND_NO_PERMISSION_ADMIN": "Sorry, but that Command can only be used by the Owner of this Server, and those with the \"ADMINISTRATOR\" Permission.",
+        "TEXT_COMMAND_NO_PERMISSION_MODERATOR": "Sorry, but that Command can only be used by this Server's Moderators, those with the \"ADMINISTRATOR\" Permission, and this Server's Owner.",
+        "TEXT_COMMAND_NO_PERMISSION_GENERIC": "Sorry, but you do not have the permission to use that Command.",
+        "TEXT_COMMAND_ARGUMENTS_REQUIRED": "Sorry, but this Command requires arguments to be included in its usage.\n",
+        "TEXT_COMMAND_ARGUMENTS_MINIMUM": "Sorry, but this Command requires a **minimum** of {{minimumArguments}} arguments, while you only included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_ARGUMENTS_MAXIMUM": "Sorry, but this Command requires a **maximum** of {{maximumArguments}} arguments, while you included {{givenArguments}} arguments.",
+        "TEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Command again.",
+        "TEXT_COMMAND_NO_TIV": "Sorry, but this Command cannot be used inside a Voice Channel's Text Chat.",
+        "TEXT_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Command cannot be used inside an Announcement Channel.",
+        "TEXT_COMMAND_NO_THREAD": "Sorry, but this Command cannot be used inside of a Thread.",
+        "TEXT_COMMAND_NO_FORUM": "Sorry, but this Command cannot be used inside of a Forum Channel's Thread.",
+
+        "SLASH_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Slash Command.",
+        "SLASH_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Slash Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SLASH_COMMAND_DMS_ONLY": "Sorry, but this Slash Command can only be used in DMs with me.",
+        "SLASH_COMMAND_GUILDS_ONLY": "Sorry, but this Slash Command can only be used in Servers, not in DMs with me.",
+        "SLASH_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Slash Command again.",
+        "SLASH_COMMAND_NO_TIV": "Sorry, but this Slash Command cannot be used inside a Voice Channel's Text Chat.",
+        "SLASH_COMMAND_NO_ANNOUNCEMENT": "Sorry, but this Slash Command cannot be used inside an Announcement Channel.",
+        "SLASH_COMMAND_NO_THREAD": "Sorry, but this Slash Command cannot be used inside of a Thread",
+        "SLASH_COMMAND_NO_FORUM": "Sorry, but this Slash Command cannot be used inside of a Forum Channel's Thread.",
+
+        "CONTEXT_COMMAND_GENERIC_FAILED": "Sorry, but there was a problem trying to run this Context Command.",
+        "CONTEXT_COMMAND_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to run this Context Command.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "CONTEXT_COMMAND_COOLDOWN": "Please wait {{commandCooldown}} before using this Context Command again.",
+
+        "SELECT_MENU_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Select Menu choice.",
+        "SELECT_MENU_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Select Menu choice.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "SELECT_MENU_COOLDOWN": "Please wait {{selectCooldown}} before using this Select Menu again.",
+
+        "BUTTON_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Button press.",
+        "BUTTON_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Button press.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+        "BUTTON_COOLDOWN": "Please wait {{buttonCooldown}} before using that Button again.",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
