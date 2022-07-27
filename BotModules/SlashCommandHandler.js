@@ -74,7 +74,7 @@ module.exports = {
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
                         let cooldownHoursMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
-                        return await slashInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
+                        return await slashInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
@@ -185,7 +185,7 @@ module.exports = {
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
                         let cooldownHoursMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
-                        return await slashInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
+                        return await slashInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
@@ -298,7 +298,7 @@ module.exports = {
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
                         let cooldownHoursMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
-                        return await slashInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
+                        return await slashInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
