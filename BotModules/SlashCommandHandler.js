@@ -66,11 +66,53 @@ module.exports = {
 
                     // HOURS
                     case timeLeft >= 3600 && timeLeft < 86400:
-                        timeLeft = timeLeft / 60; // For UX
+                        timeLeft = timeLeft / 3600; // For UX
                         let cooldownHoursMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
+
+                    // DAYS
+                    case timeLeft >= 86400 && timeLeft < 2.628e+6:
+                        timeLeft = timeLeft / 86400; // For UX
+                        let cooldownDaysMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        return await slashInteraction.reply({ ephemeral: true, content: cooldownDaysMessage });
+
+                    // MONTHS
+                    case timeLeft >= 2.628e+6:
+                        timeLeft = timeLeft / 2.628e+6; // For UX
+                        let cooldownMonthsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        return await slashInteraction.reply({ ephemeral: true, content: cooldownMonthsMessage });
+
+                    // SECONDS
+                    default:
+                        let cooldownSecondsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        return await slashInteraction.reply({ ephemeral: true, content: cooldownSecondsMessage });
                 }
             }
         }
+        else
+        {
+            // Create new cooldown
+            Timestamps.set(slashInteraction.user.id, Now);
+            setTimeout(() => Timestamps.delete(slashInteraction.user.id), CooldownAmount);
+        }
+
+
+
+        // Attempt to run Command
+        try { await SlashCommand.execute(slashInteraction); }
+        catch (err)
+        {
+            //console.error(err);
+            if ( slashInteraction.deferred )
+            {
+                await slashInteraction.editReply({ content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+            }
+            else
+            {
+                await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+            }
+        }
+
+        return;
     }
 }
