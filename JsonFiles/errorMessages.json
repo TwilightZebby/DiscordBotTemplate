@@ -60,6 +60,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -126,6 +129,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -194,6 +200,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -260,6 +269,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -328,6 +340,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -394,6 +409,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -462,6 +480,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -528,6 +549,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -596,6 +620,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -662,6 +689,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -730,6 +760,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -796,6 +829,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -864,6 +900,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -930,6 +969,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -998,6 +1040,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1064,6 +1109,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -1132,6 +1180,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1198,6 +1249,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -1266,6 +1320,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1332,6 +1389,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -1400,6 +1460,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1466,6 +1529,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -1534,6 +1600,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1600,6 +1669,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -1668,6 +1740,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1734,6 +1809,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
@@ -1802,6 +1880,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1869,6 +1950,9 @@
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
 
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
+
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
     },
@@ -1935,6 +2019,9 @@
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
         "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+
+        "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
+        "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot).",
 
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
         "SHUTDOWN_BUTTON_CANCEL": "Cancel"
