@@ -88,7 +88,7 @@ module.exports = {
 
 
 
-        // Attempt to run Command
+        // Attempt to process Select
         try { await Select.execute(selectInteraction); }
         catch (err)
         {

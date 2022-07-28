@@ -88,7 +88,7 @@ module.exports = {
 
 
 
-        // Attempt to run Command
+        // Attempt to process Button
         try { await Button.execute(buttonInteraction); }
         catch (err)
         {

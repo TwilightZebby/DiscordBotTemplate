@@ -22,7 +22,7 @@ module.exports = {
         }
 
 
-        // Attempt to run Modal
+        // Attempt to process Modal
         try { await Modal.execute(modalInteraction); }
         catch (err)
         {
