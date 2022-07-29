@@ -27,7 +27,7 @@ module.exports = {
             const [, MatchedPrefix] = message.content.match(PrefixRegex);
             const Arguments = message.content.slice(MatchedPrefix.length).trim().split(/ +/);
             const CommandName = Arguments.shift().toLowerCase();
-            const Command = client.textCommands.get(CommandName);
+            const Command = Collections.TextCommands.get(CommandName) || Collections.TextCommands.find(cmd => cmd.Aliases && cmd.Aliases.includes(CommandName));
 
             if ( !Command ) { return null; }
 
