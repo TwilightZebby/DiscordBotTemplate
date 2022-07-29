@@ -7,7 +7,6 @@ module.exports = {
     /**
      * Handles and runs received Modals
      * @param {Discord.ModalSubmitInteraction} modalInteraction 
-     * @returns {Promise<*>}
      */
     async Main(modalInteraction)
     {

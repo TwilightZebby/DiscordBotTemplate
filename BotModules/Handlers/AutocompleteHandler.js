@@ -7,7 +7,6 @@ module.exports = {
     /**
      * Handles and runs received Autocomplete Interactions
      * @param {Discord.AutocompleteInteraction} autocompleteInteraction 
-     * @returns {Promise<*>}
      */
     async Main(autocompleteInteraction)
     {

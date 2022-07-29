@@ -7,7 +7,6 @@ module.exports = {
     /**
      * Handles and runs received Buttons
      * @param {Discord.ButtonInteraction} buttonInteraction 
-     * @returns {Promise<*>}
      */
     async Main(buttonInteraction)
     {

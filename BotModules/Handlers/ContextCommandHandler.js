@@ -7,7 +7,6 @@ module.exports = {
     /**
      * Handles and runs received Context Commands
      * @param {Discord.ContextMenuCommandInteraction} contextInteraction 
-     * @returns {Promise<*>}
      */
     async Main(contextInteraction)
     {

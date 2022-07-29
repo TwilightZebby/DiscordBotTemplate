@@ -7,7 +7,6 @@ module.exports = {
     /**
      * Handles and runs received Slash Commands
      * @param {Discord.ChatInputCommandInteraction} slashInteraction 
-     * @returns {Promise<*>}
      */
     async Main(slashInteraction)
     {
@@ -128,7 +127,6 @@ module.exports = {
      * Handles and runs received Slash Commands, when a Subcommand is used
      * @param {Discord.ChatInputCommandInteraction} slashInteraction 
      * @param {*} SlashCommand File with Slash Command's data
-     * @returns {Promise<*>}
      */
     async Subcommand(slashInteraction, SlashCommand)
     { 
@@ -239,7 +237,6 @@ module.exports = {
      * Handles and runs received Slash Commands, when a Subcommand Group is used
      * @param {Discord.ChatInputCommandInteraction} slashInteraction 
      * @param {*} SlashCommand File with Slash Command's data
-     * @returns {Promise<*>}
      */
     async SubcommandGroup(slashInteraction, SlashCommand)
     { 

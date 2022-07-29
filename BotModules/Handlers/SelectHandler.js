@@ -7,7 +7,6 @@ module.exports = {
     /**
      * Handles and runs received Selects
      * @param {Discord.SelectMenuInteraction} selectInteraction 
-     * @returns {Promise<*>}
      */
     async Main(selectInteraction)
     {
