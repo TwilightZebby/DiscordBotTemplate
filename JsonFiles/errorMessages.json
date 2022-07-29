@@ -58,7 +58,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -125,7 +126,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -192,7 +194,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -259,7 +262,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -326,7 +330,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -393,7 +398,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -460,7 +466,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -527,7 +534,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -594,7 +602,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -661,7 +670,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -728,7 +738,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -795,7 +806,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -862,7 +874,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -929,7 +942,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -996,7 +1010,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1063,7 +1078,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1130,7 +1146,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1197,7 +1214,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1264,7 +1282,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1331,7 +1350,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1398,7 +1418,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1465,7 +1486,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1532,7 +1554,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1599,7 +1622,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1666,7 +1690,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1733,7 +1758,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1800,7 +1826,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1867,7 +1894,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
@@ -1934,7 +1962,8 @@
         "BUTTON_COOLDOWN_MINUTES": "Please wait {{commandCooldown}} more minutes before using that Button again.",
         "BUTTON_COOLDOWN_HOURS": "Please wait {{commandCooldown}} more hours before using that Button again.",
         "BUTTON_COOLDOWN_DAYS": "Please wait {{commandCooldown}} more days before using that Button again.",
-        "BUTTON_COOLDOWN_MONTHS": "Please wait {{commandCooldown}} more months before using that Button again.",
+        
+        "AUTOCOMPLETE_GENERIC_FAILED": "ERROR: Unable to process, please contact this Bot's developer.",
 
         "MODAL_GENERIC_FAILED": "Sorry, but there was a problem trying to process that Modal submission.",
         "MODAL_GENERIC_FAILED_RARE": "Sorry, but there was a problem trying to process that Modal submission.\nIf you continue to see this error, please contact TwilightZebby#1955 (the developer of this Bot)."
