@@ -1,4 +1,4 @@
-const Discord = await import("discord.js");
+const Discord = require("discord.js");
 const fs = await import("fs");
 
 const { DiscordClient, Collections } = await import("./constants.js");
@@ -138,6 +138,55 @@ DiscordClient.on('messageCreate', async (message) => {
     {
         // Command failed or successful
         return;
+    }
+});
+
+
+
+
+
+
+
+
+/******************************************************************************* */
+// DISCORD - INTERACTION CREATE EVENT
+const SlashCommandHandler = await import("./BotModules/Handlers/SlashCommandHandler.js");
+const ContextCommandHandler = await import("./BotModules/Handlers/ContextCommandHandler.js");
+const ButtonHandler = await import("./BotModules/Handlers/ButtonHandler.js");
+const SelectHandler = await import("./BotModules/Handlers/SelectHandler.js");
+const AutocompleteHandler = await import("./BotModules/Handlers/AutocompleteHandler.js");
+const ModalHandler = await import("./BotModules/Handlers/ModalHandler.js");
+
+DiscordClient.on('interactionCreate', async (interaction) => {
+    switch(interaction)
+    {
+        case interaction.isChatInputCommand():
+            // Slash Command
+            return await SlashCommandHandler.Main(interaction);
+
+        case interaction.isContextMenuCommand():
+            // Context Command
+            return await ContextCommandHandler.Main(interaction);
+
+        case interaction.isButton():
+            // Button
+            return await ButtonHandler.Main(interaction);
+
+        case interaction.isSelectMenu():
+            // Select
+            return await SelectHandler.Main(interaction);
+
+        case interaction.isAutocomplete():
+            // Autocomplete
+            return await AutocompleteHandler.Main(interaction);
+
+        case interaction.isModalSubmit():
+            // Modal
+            return await ModalHandler.Main(interaction);
+
+        default:
+            // Unknown or unhandled new type of Interaction
+            return console.log(`****Unrecognised or new unhandled Interaction type triggered:\n${interaction}`);
     }
 });
 
