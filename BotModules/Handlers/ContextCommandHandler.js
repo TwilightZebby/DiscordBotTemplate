@@ -24,6 +24,18 @@ module.exports = {
             return await contextInteraction.reply({ ephemeral: true, content: LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_GENERIC_FAILED_RARE });
         }
 
+        // DM Check
+        if ( ContextCommand.Scope === 'DM' && !(contextInteraction.channel instanceof Discord.DMChannel) )
+        {
+            return await contextInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
+        }
+
+        // Guild Check
+        if ( ContextCommand.Scope === 'GUILD' && (contextInteraction.channel instanceof Discord.DMChannel) )
+        {
+            return await contextInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
+        }
+
 
 
         // Context Command Cooldowns

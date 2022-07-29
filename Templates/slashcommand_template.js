@@ -26,7 +26,7 @@ module.exports = {
     },
 
     // Scope of Command's usage
-    //     One of the following: DM, GUILD
+    //     One of the following: DM, GUILD, ALL
     Scope: "GUILD",
 
 
