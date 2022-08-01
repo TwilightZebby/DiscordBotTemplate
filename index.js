@@ -18,42 +18,42 @@ for ( const File of TextCommandFiles )
 }
 
 // Slash Commands
-const SlashCommandFiles = fs.readdirSync("./SlashCommands").filter(file => file.endsWith(".js"));
+const SlashCommandFiles = fs.readdirSync("./Interactions/SlashCommands").filter(file => file.endsWith(".js"));
 for ( const File of SlashCommandFiles )
 {
-    const TempCommand = await import(`./SlashCommands/${File}`);
+    const TempCommand = await import(`./Interactions/SlashCommands/${File}`);
     Collections.SlashCommands.set(TempCommand.name, TempCommand);
 }
 
 // Context Commands
-const ContextCommandFiles = fs.readdirSync("./ContextCommands").filter(file => file.endsWith(".js"));
+const ContextCommandFiles = fs.readdirSync("./Interactions/ContextCommands").filter(file => file.endsWith(".js"));
 for ( const File of ContextCommandFiles )
 {
-    const TempCommand = await import(`./ContextCommands/${File}`);
+    const TempCommand = await import(`./Interactions/ContextCommands/${File}`);
     Collections.ContextCommands.set(TempCommand.name, TempCommand);
 }
 
 // Buttons
-const ButtonFiles = fs.readdirSync("./Buttons").filter(file => file.endsWith(".js"));
+const ButtonFiles = fs.readdirSync("./Interactions/Buttons").filter(file => file.endsWith(".js"));
 for ( const File of ButtonFiles )
 {
-    const TempButton = await import(`./Buttons/${File}`);
+    const TempButton = await import(`./Interactions/Buttons/${File}`);
     Collections.Buttons.set(TempButton.name, TempButton);
 }
 
 // Selects
-const SelectFiles = fs.readdirSync("./Selects").filter(file => file.endsWith(".js"));
+const SelectFiles = fs.readdirSync("./Interactions/Selects").filter(file => file.endsWith(".js"));
 for ( const File of SelectFiles )
 {
-    const TempSelect = await import(`./Selects/${File}`);
+    const TempSelect = await import(`./Interactions/Selects/${File}`);
     Collections.Selects.set(TempSelect.name, TempSelect);
 }
 
 // Modals
-const ModalFiles = fs.readdirSync("./Modals").filter(file => file.endsWith(".js"));
+const ModalFiles = fs.readdirSync("./Interactions/Modals").filter(file => file.endsWith(".js"));
 for ( const File of ModalFiles )
 {
-    const TempModal = await import(`./Modals/${File}`);
+    const TempModal = await import(`./Interactions/Modals/${File}`);
     Collections.Modals.set(TempModal.name, TempModal);
 }
 
