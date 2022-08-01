@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, Collection } = await import("discord.js");
+const { Client, GatewayIntentBits, Collection } = require("discord.js");
 
 module.exports =
 {

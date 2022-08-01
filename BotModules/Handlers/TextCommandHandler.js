@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const { PermissionFlagsBits, time } = require("discord.js");
-const { DiscordClient, Collections } = await import("../../constants.js");
-const LocalizedErrors = await import("../../JsonFiles/errorMessages.json");
-const Config = await import("../../config.js");
+const { DiscordClient, Collections } = require("../../constants.js");
+const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
+const Config = require("../../config.js");
 
 module.exports = {
     /**

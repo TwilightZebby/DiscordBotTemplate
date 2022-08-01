@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
-const { DiscordClient, Collections } = await import("../../constants.js");
-const LocalizedErrors = await import("../../JsonFiles/errorMessages.json");
-const LocalizedStrings = await import("../../JsonFiles/stringMessages.json");
+const { DiscordClient, Collections } = require("../../constants.js");
+const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
+const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     // Command's Name
@@ -60,6 +60,8 @@ module.exports = {
                 required: true
             }
         ];
+
+        return Data;
     },
 
 
@@ -164,7 +166,7 @@ module.exports = {
             // Not a blank input, filter based on input
             let lowerCaseInput = TypedInput.toLowerCase();
             let filteredGuilds = BotGuilds.filter(guild => guild.id.match(TypedInput) || guild.name.toLowerCase().startsWith(lowerCaseInput) || guild.name.toLowerCase().includes(lowerCaseInput));
-            filteredGuilds.forEach(guild => filteredGuilds.push({name: guild.name, value: guild.id}));
+            filteredGuilds.forEach(guild => filteredResults.push({name: guild.name, value: guild.id}));
         }
 
         // Ensure below 25 option limit

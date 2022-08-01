@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
-const { DiscordClient, Collections } = await import("../constants.js");
-const LocalizedErrors = await import("../JsonFiles/errorMessages.json");
-const LocalizedStrings = await import("../JsonFiles/stringMessages.json");
+const { DiscordClient, Collections } = require("../constants.js");
+const LocalizedErrors = require("../JsonFiles/errorMessages.json");
+const LocalizedStrings = require("../JsonFiles/stringMessages.json");
 
 module.exports = {
     // Button's Name

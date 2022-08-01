@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
-const fs = await import("fs");
+const fs = require("fs");
 
-const { DiscordClient, Collections } = await import("./constants.js");
-const LocalizedErrors = await import("./JsonFiles/errorMessages.json");
-const Config = await import("./config.js");
+const { DiscordClient, Collections } = require("./constants.js");
+const LocalizedErrors = require("./JsonFiles/errorMessages.json");
+const Config = require("./config.js");
 
 
 
@@ -13,48 +13,48 @@ const Config = await import("./config.js");
 const TextCommandFiles = fs.readdirSync("./TextCommands").filter(file => file.endsWith(".js"));
 for ( const File of TextCommandFiles )
 {
-    const TempCommand = await import(`./TextCommands/${File}`);
-    Collections.TextCommands.set(TempCommand.name, TempCommand);
+    const TempCommand = require(`./TextCommands/${File}`);
+    Collections.TextCommands.set(TempCommand.Name, TempCommand);
 }
 
 // Slash Commands
 const SlashCommandFiles = fs.readdirSync("./Interactions/SlashCommands").filter(file => file.endsWith(".js"));
 for ( const File of SlashCommandFiles )
 {
-    const TempCommand = await import(`./Interactions/SlashCommands/${File}`);
-    Collections.SlashCommands.set(TempCommand.name, TempCommand);
+    const TempCommand = require(`./Interactions/SlashCommands/${File}`);
+    Collections.SlashCommands.set(TempCommand.Name, TempCommand);
 }
 
 // Context Commands
 const ContextCommandFiles = fs.readdirSync("./Interactions/ContextCommands").filter(file => file.endsWith(".js"));
 for ( const File of ContextCommandFiles )
 {
-    const TempCommand = await import(`./Interactions/ContextCommands/${File}`);
-    Collections.ContextCommands.set(TempCommand.name, TempCommand);
+    const TempCommand = require(`./Interactions/ContextCommands/${File}`);
+    Collections.ContextCommands.set(TempCommand.Name, TempCommand);
 }
 
 // Buttons
 const ButtonFiles = fs.readdirSync("./Interactions/Buttons").filter(file => file.endsWith(".js"));
 for ( const File of ButtonFiles )
 {
-    const TempButton = await import(`./Interactions/Buttons/${File}`);
-    Collections.Buttons.set(TempButton.name, TempButton);
+    const TempButton = require(`./Interactions/Buttons/${File}`);
+    Collections.Buttons.set(TempButton.Name, TempButton);
 }
 
 // Selects
 const SelectFiles = fs.readdirSync("./Interactions/Selects").filter(file => file.endsWith(".js"));
 for ( const File of SelectFiles )
 {
-    const TempSelect = await import(`./Interactions/Selects/${File}`);
-    Collections.Selects.set(TempSelect.name, TempSelect);
+    const TempSelect = require(`./Interactions/Selects/${File}`);
+    Collections.Selects.set(TempSelect.Name, TempSelect);
 }
 
 // Modals
 const ModalFiles = fs.readdirSync("./Interactions/Modals").filter(file => file.endsWith(".js"));
 for ( const File of ModalFiles )
 {
-    const TempModal = await import(`./Interactions/Modals/${File}`);
-    Collections.Modals.set(TempModal.name, TempModal);
+    const TempModal = require(`./Interactions/Modals/${File}`);
+    Collections.Modals.set(TempModal.Name, TempModal);
 }
 
 
@@ -102,7 +102,7 @@ DiscordClient.on('error', (err) => { return console.error("***DISCORD ERROR: ", 
 
 /******************************************************************************* */
 // DISCORD - MESSAGE CREATE EVENT
-const TextCommandHandler = await import("./BotModules/TextCommandHandler.js");
+const TextCommandHandler = require("./BotModules/Handlers/TextCommandHandler.js");
 
 DiscordClient.on('messageCreate', async (message) => {
     // Partials
@@ -150,43 +150,48 @@ DiscordClient.on('messageCreate', async (message) => {
 
 /******************************************************************************* */
 // DISCORD - INTERACTION CREATE EVENT
-const SlashCommandHandler = await import("./BotModules/Handlers/SlashCommandHandler.js");
-const ContextCommandHandler = await import("./BotModules/Handlers/ContextCommandHandler.js");
-const ButtonHandler = await import("./BotModules/Handlers/ButtonHandler.js");
-const SelectHandler = await import("./BotModules/Handlers/SelectHandler.js");
-const AutocompleteHandler = await import("./BotModules/Handlers/AutocompleteHandler.js");
-const ModalHandler = await import("./BotModules/Handlers/ModalHandler.js");
+const SlashCommandHandler = require("./BotModules/Handlers/SlashCommandHandler.js");
+const ContextCommandHandler = require("./BotModules/Handlers/ContextCommandHandler.js");
+const ButtonHandler = require("./BotModules/Handlers/ButtonHandler.js");
+const SelectHandler = require("./BotModules/Handlers/SelectHandler.js");
+const AutocompleteHandler = require("./BotModules/Handlers/AutocompleteHandler.js");
+const ModalHandler = require("./BotModules/Handlers/ModalHandler.js");
 
 DiscordClient.on('interactionCreate', async (interaction) => {
-    switch(interaction)
+    if ( interaction.isChatInputCommand() )
     {
-        case interaction.isChatInputCommand():
-            // Slash Command
-            return await SlashCommandHandler.Main(interaction);
-
-        case interaction.isContextMenuCommand():
-            // Context Command
-            return await ContextCommandHandler.Main(interaction);
-
-        case interaction.isButton():
-            // Button
-            return await ButtonHandler.Main(interaction);
-
-        case interaction.isSelectMenu():
-            // Select
-            return await SelectHandler.Main(interaction);
-
-        case interaction.isAutocomplete():
-            // Autocomplete
-            return await AutocompleteHandler.Main(interaction);
-
-        case interaction.isModalSubmit():
-            // Modal
-            return await ModalHandler.Main(interaction);
-
-        default:
-            // Unknown or unhandled new type of Interaction
-            return console.log(`****Unrecognised or new unhandled Interaction type triggered:\n${interaction}`);
+        // Slash Command
+        return await SlashCommandHandler.Main(interaction);
+    }
+    else if ( interaction.isContextMenuCommand() )
+    {
+        // Context Command
+        return await ContextCommandHandler.Main(interaction);
+    }
+    else if ( interaction.isButton() )
+    {
+        // Button
+        return await ButtonHandler.Main(interaction);
+    }
+    else if ( interaction.isSelectMenu() )
+    {
+        // Select
+        return await SelectHandler.Main(interaction);
+    }
+    else if ( interaction.isAutocomplete() )
+    {
+        // Autocomplete
+        return await AutocompleteHandler.Main(interaction);
+    }
+    else if ( interaction.isModalSubmit() )
+    {
+        // Modal
+        return await ModalHandler.Main(interaction);
+    }
+    else
+    {
+        // Unknown or unhandled new type of Interaction
+        return console.log(`****Unrecognised or new unhandled Interaction type triggered:\n${interaction.type}\n${interaction}`);
     }
 });
 
