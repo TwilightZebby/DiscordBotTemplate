@@ -3,7 +3,3 @@ config.js
 /.vscode
 
 # /JsonFiles
-
-/TextCommands/shutdown.js
-
-/Buttons/shutdown.js
