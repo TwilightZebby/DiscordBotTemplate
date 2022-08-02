@@ -76,7 +76,6 @@ module.exports = {
         const CommandGuildId = SplitInput.length === 3 ? SplitInput.pop() : null;
         
         const FetchedCommand = await DiscordClient.application.commands.fetch(CommandId);
-        console.log(FetchedCommand);
 
         if ( CommandGuildId == null )
         {
