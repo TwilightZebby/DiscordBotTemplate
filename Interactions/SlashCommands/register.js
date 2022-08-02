@@ -72,7 +72,37 @@ module.exports = {
      */
     async execute(slashCommand)
     {
-        //.
+        // Defer
+        await slashCommand.deferReply({ ephemeral: true });
+
+        // Grab Inputs
+        const InputCommand = slashCommand.options.getString("command", true);
+        const CommandType = InputCommand.split("_").shift();
+        const CommandName = InputCommand.split("_").pop();
+        const InputScope = slashCommand.options.getString("scope", true);
+        let fetchedCommand;
+
+        // Fetch specified Command
+        if ( CommandType === "slash" ) { fetchedCommand = Collections.SlashCommands.get(CommandName); }
+        else if ( CommandName === "context" ) { fetchedCommand = Collections.ContextCommands.get(CommandName); }
+
+        // Register based on Scope
+        const FetchedCommandData = fetchedCommand.registerData();
+
+        if ( InputScope === "global" )
+        {
+            // Globally register
+            return await DiscordClient.application.commands.create(FetchedCommandData)
+            .then(async () => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].REGISTER_COMMAND_SUCCESS_GLOBAL.replace("{{COMMAND_NAME}}", FetchedCommandData.Name).replace("{{COMMAND_TYPE}}", CommandType) }); })
+            .catch(async (err) => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].REGISTER_COMMAND_FAIL_GLOBAL.replace("{{COMMAND_NAME}}", FetchedCommandData.Name).replace("{{COMMAND_TYPE}}", CommandType) }); });
+        }
+        else
+        {
+            // Register on a per-Guild basis
+            return await DiscordClient.application.commands.create(FetchedCommandData, InputScope)
+            .then(async () => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].REGISTER_COMMAND_SUCCESS_GUILD.replace("{{COMMAND_NAME}}", FetchedCommandData.Name).replace("{{COMMAND_TYPE}}", CommandType).replace("{{GUILD_ID}}", InputScope) }); })
+            .catch(async (err) => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].REGISTER_COMMAND_FAIL_GUILD.replace("{{COMMAND_NAME}}", FetchedCommandData.Name).replace("{{COMMAND_TYPE}}", CommandType).replace("{{GUILD_ID}}", InputScope) }); });
+        }
     },
 
 
@@ -119,8 +149,8 @@ module.exports = {
         if ( !TypedInput || TypedInput == "" || TypedInput == " " )
         {
             // Blank Input, default to all commands
-            SlashCommands.forEach(cmd => filteredResults.push({name: `/${cmd.Name}`, value: `slash_${cmd.name}`}));
-            ContextCommands.forEach(cmd => filteredResults.push({name: `${cmd.Name}`, value: `context_${cmd.Name.toLowerCase()}`}));
+            SlashCommands.forEach(cmd => filteredResults.push({name: `/${cmd.Name}`, value: `slash_${cmd.Name}`}));
+            ContextCommands.forEach(cmd => filteredResults.push({name: `${cmd.Name}`, value: `context_${cmd.Name}`}));
         }
         else
         {
@@ -129,7 +159,7 @@ module.exports = {
             let filteredSlashCommands = SlashCommands.filter(cmd => cmd.Name.startsWith(lowerCaseInput) || cmd.Name.includes(lowerCaseInput));
             let filteredContextCommands = ContextCommands.filter(cmd => cmd.Name.toLowerCase().startsWith(lowerCaseInput) || cmd.Name.toLowerCase().includes(lowerCaseInput));
             // Add to results
-            filteredSlashCommands.forEach(cmd => filteredResults.push({name: `/${cmd.Name}`, value: `slash_${cmd.name}`}));
+            filteredSlashCommands.forEach(cmd => filteredResults.push({name: `/${cmd.Name}`, value: `slash_${cmd.Name}`}));
             filteredContextCommands.forEach(cmd => filteredResults.push({name: `${cmd.Name}`, value: `context_${cmd.Name.toLowerCase()}`}));
         }
 

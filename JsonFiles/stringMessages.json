@@ -2,7 +2,12 @@
     "en-GB":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -10,7 +15,12 @@
     "en-US":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -18,7 +28,12 @@
     "bg":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -26,7 +41,12 @@
     "zh-CN":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -34,7 +54,12 @@
     "zh-TW":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -42,7 +67,12 @@
     "hr":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -50,7 +80,12 @@
     "cs":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -58,7 +93,12 @@
     "da":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -66,7 +106,12 @@
     "fi":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -74,7 +119,12 @@
     "fr":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -82,7 +132,12 @@
     "de":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -90,7 +145,12 @@
     "el":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -98,7 +158,12 @@
     "hi":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -106,7 +171,12 @@
     "hu":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -114,7 +184,12 @@
     "it":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -122,7 +197,12 @@
     "ja":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -130,7 +210,12 @@
     "ko":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -138,7 +223,12 @@
     "lt":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -146,7 +236,12 @@
     "no":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -154,7 +249,12 @@
     "pl":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -162,7 +262,12 @@
     "pt-BR":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -170,7 +275,12 @@
     "ro":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -178,7 +288,12 @@
     "ru":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -186,7 +301,12 @@
     "es-ES":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -194,7 +314,12 @@
     "sv-SE":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -202,7 +327,12 @@
     "th":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -210,7 +340,12 @@
     "tr":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -218,7 +353,12 @@
     "uk":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -226,6 +366,11 @@
     "vi":
     {
         "SHUTDOWN_BUTTON_CONFIRM": "Shutdown",
-        "SHUTDOWN_BUTTON_CANCEL": "Cancel"
+        "SHUTDOWN_BUTTON_CANCEL": "Cancel",
+
+        "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+        "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
     }
 }
