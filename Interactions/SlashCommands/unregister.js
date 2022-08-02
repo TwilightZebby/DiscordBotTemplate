@@ -47,8 +47,15 @@ module.exports = {
         Data.options = [
             {
                 type: Discord.ApplicationCommandOptionType.String,
-                name: "command",
-                description: "App Command to unregister",
+                name: "commandid",
+                description: "ID of App Command to unregister",
+                maxLength: 20,
+                required: true
+            },
+            {
+                type: Discord.ApplicationCommandOptionType.String,
+                name: "scope",
+                description: "Where to unregister command from",
                 autocomplete: true,
                 required: true
             }
@@ -69,27 +76,23 @@ module.exports = {
         await slashCommand.deferReply({ ephemeral: true });
 
         // Grab Inputs
-        const InputCommand = slashCommand.options.getString("command", true);
-        const SplitInput = InputCommand.split("_");
-        const CommandId = SplitInput.shift();
-        const CommandName = SplitInput[1];
-        const CommandGuildId = SplitInput.length === 3 ? SplitInput.pop() : null;
-        
-        const FetchedCommand = await DiscordClient.application.commands.fetch(CommandId);
+        const InputCommandId = slashCommand.options.getString("commandid", true);
+        const InputScope = slashCommand.options.getString("scope", true);
 
-        if ( CommandGuildId == null )
+        // Unregister based on Scope
+        if ( InputScope === "global" )
         {
             // Globally unregister
-            return await DiscordClient.application.commands.delete(FetchedCommand.id)
-            .then(async () => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_SUCCESS_GLOBAL.replace("{{COMMAND_NAME}}", CommandName) }); })
-            .catch(async (err) => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_FAIL_GLOBAL.replace("{{COMMAND_NAME}}", CommandName) }); });
+            return await DiscordClient.application.commands.delete(InputCommandId)
+            .then(async () => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_SUCCESS_GLOBAL }); })
+            .catch(async (err) => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_FAIL_GLOBAL }); });
         }
         else
         {
             // Unregister on a per-Guild basis
-            return await DiscordClient.application.commands.delete(FetchedCommand.id, CommandGuildId)
-            .then(async () => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_SUCCESS_GUILD.replace("{{COMMAND_NAME}}", CommandName).replace("{{GUILD_ID}}", CommandGuildId) }); })
-            .catch(async (err) => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_FAIL_GUILD.replace("{{COMMAND_NAME}}", CommandName).replace("{{GUILD_ID}}", CommandGuildId) }); });
+            return await DiscordClient.application.commands.delete(InputCommandId, InputScope)
+            .then(async () => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_SUCCESS_GUILD.replace("{{GUILD_ID}}", InputScope) }); })
+            .catch(async (err) => { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].UNREGISTER_COMMAND_FAIL_GUILD.replace("{{GUILD_ID}}", InputScope) }); });
         }
     },
 
@@ -106,8 +109,8 @@ module.exports = {
 
         switch (CurrentOption.name)
         {
-            case "command":
-                return await this.autocompleteCommand(autocompleteInteraction);
+            case "scope":
+                return await this.autocompleteScope(autocompleteInteraction);
 
             default:
                 return await autocompleteInteraction.respond([{name: LocalizedErrors[autocompleteInteraction.locale].AUTOCOMPLETE_GENERIC_FAILED, value: "ERROR_FAILED" }]);
@@ -117,37 +120,36 @@ module.exports = {
 
 
     /**
-     * Handles Autocomplete for the Command Option
+     * Handles Autocomplete for the Scope Option
      * @param {Discord.AutocompleteInteraction} autocompleteInteraction 
      */
-    async autocompleteCommand(autocompleteInteraction)
-    {
-        // Grab currently typed input
-        const TypedInput = autocompleteInteraction.options.getFocused();
-        // Grab copy of App Commands registered
-        const RegisteredCommands = await DiscordClient.application.commands.fetch();
-        /** @type {Array<Discord.ApplicationCommandOptionChoiceData>} */
-        let filteredResults = [];
-
-        // Confirm not blank input
-        if ( !TypedInput || TypedInput == "" || TypedInput == " " )
-        {
-            // Blank Input, default to all commands
-            RegisteredCommands.forEach(cmd => filteredResults.push({name: `${cmd.type === Discord.ApplicationCommandType.ChatInput ? "/" : ""}${cmd.name}${cmd.guild != null ? ` (G:${cmd.guild.id})` : ""}`, value: `${cmd.id}_${cmd.name}${cmd.guild != null ? `_${cmd.guild.id}` : ""}`}));
-        }
-        else
-        {
-            // Not a blank input, filter based on input
-            let lowerCaseInput = TypedInput.toLowerCase();
-            let filteredRegisteredCommands = RegisteredCommands.filter(cmd => cmd.name.toLowerCase().startsWith(lowerCaseInput) || cmd.name.toLowerCase().includes(lowerCaseInput) || cmd.id.match(TypedInput));
-            // Add to results
-            filteredRegisteredCommands.forEach(cmd => filteredResults.push({name: `${cmd.type === Discord.ApplicationCommandType.ChatInput ? "/" : ""}${cmd.name}${cmd.guild != null ? ` (G:${cmd.guild.id})` : ""}`, value: `${cmd.id}_${cmd.name}${cmd.guild != null ? `_${cmd.guild.id}` : ""}`}));
-        }
-
-        // Ensure below 25 option limit
-        if ( filteredResults.length > 25 ) { filteredResults.slice(0, 24); }
-
-        // Respond
-        return await autocompleteInteraction.respond(filteredResults);
-    }
+     async autocompleteScope(autocompleteInteraction)
+     {
+         // Grab currently typed Input
+         const TypedInput = autocompleteInteraction.options.getFocused();
+         /** @type {Array<Discord.ApplicationCommandOptionChoiceData>} */
+         let filteredResults = [{name: "Global", value: "global"}]; // To ensure Global Scope is selectable
+         // Bring in Guilds Bot is in, so that we can register per-Guild if wanted
+         const BotGuilds = await DiscordClient.guilds.fetch();
+         
+         // Confirm not blank input
+         if ( !TypedInput || TypedInput == "" || TypedInput == " " )
+         {
+             // Blank Input, default to all Guilds
+             BotGuilds.forEach(guild => filteredResults.push({name: guild.name, value: guild.id}));
+         }
+         else
+         {
+             // Not a blank input, filter based on input
+             let lowerCaseInput = TypedInput.toLowerCase();
+             let filteredGuilds = BotGuilds.filter(guild => guild.id.match(TypedInput) || guild.name.toLowerCase().startsWith(lowerCaseInput) || guild.name.toLowerCase().includes(lowerCaseInput));
+             filteredGuilds.forEach(guild => filteredResults.push({name: guild.name, value: guild.id}));
+         }
+ 
+         // Ensure below 25 option limit
+         if ( filteredResults.length > 25 ) { filteredResults.slice(0, 24); }
+ 
+         // Respond
+         return await autocompleteInteraction.respond(filteredResults);
+     }
 }
