@@ -4,18 +4,20 @@ const { DiscordClient, Collections } = require("./constants.js");
 const LocalizedErrors = require("./JsonFiles/errorMessages.json");
 const Config = require("./config.js");
 
-// Bring in Slash Commands for registering
+// Bring in Slash Commands for (un)registering
 const RegisterCommand = require('./Interactions/SlashCommands/register.js');
+const UnregisterCommand = require('./Interactions/SlashCommands/unregister.js');
 
 // Login Bot
 DiscordClient.login(Config.TOKEN);
 
 // Wait for Ready
 DiscordClient.once('ready', async () => {
-    // Register Commands used for...registering commands
+    // Register Commands used for...(un)registering commands
     await DiscordClient.application.commands.create(RegisterCommand.registerData(), Config.ErrorLogGuildID);
+    await DiscordClient.application.commands.create(UnregisterCommand.registerData(), Config.ErrorLogGuildID);
 
-    console.log("Deployed Register Command!");
+    console.log("Deployed Register & Unregister Commands!");
 });
 
 

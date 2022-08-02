@@ -84,7 +84,7 @@ module.exports = {
 
         // Fetch specified Command
         if ( CommandType === "slash" ) { fetchedCommand = Collections.SlashCommands.get(CommandName); }
-        else if ( CommandName === "context" ) { fetchedCommand = Collections.ContextCommands.get(CommandName); }
+        else if ( CommandType === "context" ) { fetchedCommand = Collections.ContextCommands.get(CommandName); }
 
         // Register based on Scope
         const FetchedCommandData = fetchedCommand.registerData();

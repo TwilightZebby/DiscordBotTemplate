@@ -7,7 +7,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -20,7 +25,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -33,7 +43,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -46,7 +61,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -59,7 +79,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -72,7 +97,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -85,7 +115,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -98,7 +133,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -111,7 +151,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -124,7 +169,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -137,7 +187,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -150,7 +205,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -163,7 +223,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -176,7 +241,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -189,7 +259,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -202,7 +277,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -215,7 +295,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -228,7 +313,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -241,7 +331,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -254,7 +349,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -267,7 +367,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -280,7 +385,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -293,7 +403,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -306,7 +421,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -319,7 +439,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -332,7 +457,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -345,7 +475,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -358,7 +493,12 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     },
 
 
@@ -371,6 +511,11 @@
         "REGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
         "REGISTER_COMMAND_SUCCESS_GUILD": "Successfully registered the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
         "REGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command.",
-        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}"
+        "REGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to register the {{COMMAND_NAME}} {{COMMAND_TYPE}} Command to the Guild with the ID of {{GUILD_ID}}",
+
+        "UNREGISTER_COMMAND_SUCCESS_GLOBAL": "Successfully unregistered the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_SUCCESS_GUILD": "Successfully unregistered the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}",
+        "UNREGISTER_COMMAND_FAIL_GLOBAL": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command.",
+        "UNREGISTER_COMMAND_FAIL_GUILD": "Something went wrong while attempting to unregister the {{COMMAND_NAME}} Command from the Guild with the ID of {{GUILD_ID}}"
     }
 }
