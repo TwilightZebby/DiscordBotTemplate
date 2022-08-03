@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const { DiscordClient, Collections } = require("../../constants.js");
 const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
 const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
+const Config = require("../../config.js");
 
 module.exports = {
     // Command's Name
@@ -74,6 +75,9 @@ module.exports = {
     {
         // Defer
         await slashCommand.deferReply({ ephemeral: true });
+
+        // Check only Bot Dev can use this
+        if ( slashCommand.user.id !== Config.BotDevID ) { return await slashCommand.editReply({ content: LocalizedErrors[slashCommand.locale].SLASH_COMMAND_NO_PERMISSION_DEVELOPER }) }
 
         // Grab Inputs
         const InputCommand = slashCommand.options.getString("command", true);
