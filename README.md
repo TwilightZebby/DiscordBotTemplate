@@ -3,7 +3,7 @@ A simple template Discord Bot for myself.
 # Setup Guide
 *Assumes you've already cloned this, and have NodeJS*
 
-1. [Install Discord.JS](https://discord.js.org/#/docs/discord.js/main/general/welcome) (Currently this template is based on [D.JS v14.1.2](https://discord.js.org/#/docs/discord.js/14.1.2/general/welcome))
+1. [Install Discord.JS](https://discord.js.org/#/docs/discord.js/main/general/welcome) (Currently this template is based on [D.JS v14.3.0](https://discord.js.org/#/docs/discord.js/14.3.0/general/welcome))
 2. Ensure you have the following Folders ***in the root*** - as these are where the Bot will look for the Commands and Interactions
     - `./Interactions/Buttons/`
     - `./Interactions/ContextCommands/`
@@ -24,7 +24,7 @@ exports.ErrorLogGuildID = "GUILDID"; // Discord Guild ID for the Guild you use t
 ```
 
 4. Run the `./deployCommands.js` file ( `node deployCommands.js` ) to register the Slash Commands used for (un)registering other Slash/Context Commands to/from Discord's API.
-    - *This only needs to be run once, you do not need this running for the functionally of the Bot!*
+    - *This only needs to be run once, you do not need this running for the functionality of the Bot!*
 5. Run `./index.js` to run the actual Bot. ( `node index.js` )
 
 > **Note**

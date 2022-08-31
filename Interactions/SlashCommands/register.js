@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const { ChatInputCommandInteraction, ChatInputApplicationCommandData, AutocompleteInteraction, ApplicationCommandType, ApplicationCommandOptionType, ApplicationCommandOptionChoiceData } = require("discord.js");
 const { DiscordClient, Collections } = require("../../constants.js");
 const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
 const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
@@ -42,27 +42,27 @@ module.exports = {
 
     /**
      * Returns data needed for registering Slash Command onto Discord's API
-     * @returns {Discord.ChatInputApplicationCommandData}
+     * @returns {ChatInputApplicationCommandData}
      */
     registerData()
     {
-        /** @type {Discord.ChatInputApplicationCommandData} */
+        /** @type {ChatInputApplicationCommandData} */
         const Data = {};
 
         Data.name = this.Name;
         Data.description = this.Description;
-        Data.type = Discord.ApplicationCommandType.ChatInput;
+        Data.type = ApplicationCommandType.ChatInput;
         Data.dmPermission = false;
         Data.options = [
             {
-                type: Discord.ApplicationCommandOptionType.String,
+                type: ApplicationCommandOptionType.String,
                 name: "command",
                 description: "App Command to register",
                 autocomplete: true,
                 required: true
             },
             {
-                type: Discord.ApplicationCommandOptionType.String,
+                type: ApplicationCommandOptionType.String,
                 name: "scope",
                 description: "Where to register command",
                 autocomplete: true,
@@ -77,7 +77,7 @@ module.exports = {
 
     /**
      * Executes the Slash Command
-     * @param {Discord.ChatInputCommandInteraction} slashCommand 
+     * @param {ChatInputCommandInteraction} slashCommand 
      */
     async execute(slashCommand)
     {
@@ -121,7 +121,7 @@ module.exports = {
 
     /**
      * Handles given Autocomplete Interactions for any Options in this Slash CMD that uses it
-     * @param {Discord.AutocompleteInteraction} autocompleteInteraction 
+     * @param {AutocompleteInteraction} autocompleteInteraction 
      */
     async autocomplete(autocompleteInteraction)
     {
@@ -145,7 +145,7 @@ module.exports = {
 
     /**
      * Handles Autocomplete for the Command Option
-     * @param {Discord.AutocompleteInteraction} autocompleteInteraction 
+     * @param {AutocompleteInteraction} autocompleteInteraction 
      */
     async autocompleteCommand(autocompleteInteraction)
     {
@@ -154,7 +154,7 @@ module.exports = {
         // Grab copy of App Commands on Bot
         const SlashCommands = Collections.SlashCommands;
         const ContextCommands = Collections.ContextCommands;
-        /** @type {Array<Discord.ApplicationCommandOptionChoiceData>} */
+        /** @type {Array<ApplicationCommandOptionChoiceData>} */
         let filteredResults = [];
 
         // Confirm not blank input
@@ -186,13 +186,13 @@ module.exports = {
 
     /**
      * Handles Autocomplete for the Scope Option
-     * @param {Discord.AutocompleteInteraction} autocompleteInteraction 
+     * @param {AutocompleteInteraction} autocompleteInteraction 
      */
     async autocompleteScope(autocompleteInteraction)
     {
         // Grab currently typed Input
         const TypedInput = autocompleteInteraction.options.getFocused();
-        /** @type {Array<Discord.ApplicationCommandOptionChoiceData>} */
+        /** @type {Array<ApplicationCommandOptionChoiceData>} */
         let filteredResults = [{name: "Global", value: "global"}]; // To ensure Global Scope is selectable
         // Bring in Guilds Bot is in, so that we can register per-Guild if wanted
         const BotGuilds = await DiscordClient.guilds.fetch();
