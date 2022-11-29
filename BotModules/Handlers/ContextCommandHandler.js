@@ -1,6 +1,6 @@
 const { ContextMenuCommandInteraction, DMChannel, Collection } = require("discord.js");
 const { Collections } = require("../../constants.js");
-const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
+const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     /**
@@ -20,19 +20,19 @@ module.exports = {
         if ( !ContextCommand )
         {
             // Couldn't find the file for this Context Command
-            return await contextInteraction.reply({ ephemeral: true, content: LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_GENERIC_FAILED_RARE });
+            return await contextInteraction.reply({ ephemeral: true, content: LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_GENERIC_FAILED_RARE });
         }
 
         // DM Check
         if ( ContextCommand.Scope === 'DM' && !(contextInteraction.channel instanceof DMChannel) )
         {
-            return await contextInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
+            return await contextInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
         }
 
         // Guild Check
         if ( ContextCommand.Scope === 'GUILD' && (contextInteraction.channel instanceof DMChannel) )
         {
-            return await contextInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
+            return await contextInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
         }
 
 
@@ -65,30 +65,30 @@ module.exports = {
                     // MINUTES
                     case timeLeft >= 60 && timeLeft < 3600:
                         timeLeft = timeLeft / 60; // For UX
-                        let cooldownMinutesMessage = LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMinutesMessage = LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await contextInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
 
                     // HOURS
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
-                        let cooldownHoursMessage = LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownHoursMessage = LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await contextInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
                         timeLeft = timeLeft / 86400; // For UX
-                        let cooldownDaysMessage = LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownDaysMessage = LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await contextInteraction.reply({ ephemeral: true, content: cooldownDaysMessage });
 
                     // MONTHS
                     case timeLeft >= 2.628e+6:
                         timeLeft = timeLeft / 2.628e+6; // For UX
-                        let cooldownMonthsMessage = LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMonthsMessage = LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await contextInteraction.reply({ ephemeral: true, content: cooldownMonthsMessage });
 
                     // SECONDS
                     default:
-                        let cooldownSecondsMessage = LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownSecondsMessage = LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await contextInteraction.reply({ ephemeral: true, content: cooldownSecondsMessage });
                 }
             }
@@ -109,11 +109,11 @@ module.exports = {
             //console.error(err);
             if ( contextInteraction.deferred )
             {
-                await contextInteraction.editReply({ content: LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_GENERIC_FAILED });
+                await contextInteraction.editReply({ content: LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_GENERIC_FAILED });
             }
             else
             {
-                await contextInteraction.reply({ ephemeral: true, content: LocalizedErrors[contextInteraction.locale].CONTEXT_COMMAND_GENERIC_FAILED });
+                await contextInteraction.reply({ ephemeral: true, content: LocalizedStrings[contextInteraction.locale].CONTEXT_COMMAND_GENERIC_FAILED });
             }
         }
 

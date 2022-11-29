@@ -1,6 +1,6 @@
 const { ButtonInteraction, Collection } = require("discord.js");
 const { Collections } = require("../../constants.js");
-const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
+const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     /**
@@ -16,7 +16,7 @@ module.exports = {
         if ( !Button )
         {
             // Couldn't find the file for this Button
-            return await buttonInteraction.reply({ ephemeral: true, content: LocalizedErrors[buttonInteraction.locale].BUTTON_GENERIC_FAILED_RARE });
+            return await buttonInteraction.reply({ ephemeral: true, content: LocalizedStrings[buttonInteraction.locale].BUTTON_GENERIC_FAILED_RARE });
         }
 
 
@@ -49,30 +49,30 @@ module.exports = {
                     // MINUTES
                     case timeLeft >= 60 && timeLeft < 3600:
                         timeLeft = timeLeft / 60; // For UX
-                        let cooldownMinutesMessage = LocalizedErrors[buttonInteraction.locale].BUTTON_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMinutesMessage = LocalizedStrings[buttonInteraction.locale].BUTTON_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await buttonInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
 
                     // HOURS
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
-                        let cooldownHoursMessage = LocalizedErrors[buttonInteraction.locale].BUTTON_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownHoursMessage = LocalizedStrings[buttonInteraction.locale].BUTTON_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await buttonInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
                         timeLeft = timeLeft / 86400; // For UX
-                        let cooldownDaysMessage = LocalizedErrors[buttonInteraction.locale].BUTTON_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownDaysMessage = LocalizedStrings[buttonInteraction.locale].BUTTON_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await buttonInteraction.reply({ ephemeral: true, content: cooldownDaysMessage });
 
                     // MONTHS
                     case timeLeft >= 2.628e+6:
                         timeLeft = timeLeft / 2.628e+6; // For UX
-                        let cooldownMonthsMessage = LocalizedErrors[buttonInteraction.locale].BUTTON_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMonthsMessage = LocalizedStrings[buttonInteraction.locale].BUTTON_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await buttonInteraction.reply({ ephemeral: true, content: cooldownMonthsMessage });
 
                     // SECONDS
                     default:
-                        let cooldownSecondsMessage = LocalizedErrors[buttonInteraction.locale].BUTTON_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownSecondsMessage = LocalizedStrings[buttonInteraction.locale].BUTTON_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await buttonInteraction.reply({ ephemeral: true, content: cooldownSecondsMessage });
                 }
             }
@@ -93,11 +93,11 @@ module.exports = {
             //console.error(err);
             if ( buttonInteraction.deferred )
             {
-                await buttonInteraction.editReply({ content: LocalizedErrors[buttonInteraction.locale].BUTTON_GENERIC_FAILED });
+                await buttonInteraction.editReply({ content: LocalizedStrings[buttonInteraction.locale].BUTTON_GENERIC_FAILED });
             }
             else
             {
-                await buttonInteraction.reply({ ephemeral: true, content: LocalizedErrors[buttonInteraction.locale].BUTTON_GENERIC_FAILED });
+                await buttonInteraction.reply({ ephemeral: true, content: LocalizedStrings[buttonInteraction.locale].BUTTON_GENERIC_FAILED });
             }
         }
 

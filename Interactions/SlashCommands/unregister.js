@@ -1,6 +1,5 @@
 const { ChatInputCommandInteraction, ChatInputApplicationCommandData, AutocompleteInteraction, ApplicationCommandType, ApplicationCommandOptionType, ApplicationCommandOptionChoiceData } = require("discord.js");
 const { DiscordClient } = require("../../constants.js");
-const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
 const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 const Config = require("../../config.js");
 
@@ -85,7 +84,7 @@ module.exports = {
         await slashCommand.deferReply({ ephemeral: true });
 
         // Check only Bot Dev can use this
-        if ( slashCommand.user.id !== Config.BotDevID ) { return await slashCommand.editReply({ content: LocalizedErrors[slashCommand.locale].SLASH_COMMAND_NO_PERMISSION_DEVELOPER }) }
+        if ( slashCommand.user.id !== Config.BotDevID ) { return await slashCommand.editReply({ content: LocalizedStrings[slashCommand.locale].SLASH_COMMAND_NO_PERMISSION_DEVELOPER }) }
 
         // Grab Inputs
         const InputCommandId = slashCommand.options.getString("commandid", true);
@@ -125,7 +124,7 @@ module.exports = {
                 return await this.autocompleteScope(autocompleteInteraction);
 
             default:
-                return await autocompleteInteraction.respond([{name: LocalizedErrors[autocompleteInteraction.locale].AUTOCOMPLETE_GENERIC_FAILED, value: "ERROR_FAILED" }]);
+                return await autocompleteInteraction.respond([{name: LocalizedStrings[autocompleteInteraction.locale].AUTOCOMPLETE_GENERIC_FAILED, value: "ERROR_FAILED" }]);
         }
     },
 

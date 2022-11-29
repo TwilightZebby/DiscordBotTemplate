@@ -1,6 +1,6 @@
 const { AutocompleteInteraction } = require("discord.js");
 const { Collections } = require("../../constants.js");
-const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
+const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     /**
@@ -11,7 +11,7 @@ module.exports = {
     {
         // Find Slash Command with matching name
         const SlashCommand = Collections.SlashCommands.get(autocompleteInteraction.commandName);
-        if ( !SlashCommand ) { return await autocompleteInteraction.respond([{name: LocalizedErrors[autocompleteInteraction.locale].AUTOCOMPLETE_GENERIC_FAILED, value: "ERROR_FAILED"}]); }
+        if ( !SlashCommand ) { return await autocompleteInteraction.respond([{name: LocalizedStrings[autocompleteInteraction.locale].AUTOCOMPLETE_GENERIC_FAILED, value: "ERROR_FAILED"}]); }
 
         // Pass to Command's Autocomplete Method
         return await SlashCommand.autocomplete(autocompleteInteraction);

@@ -1,6 +1,6 @@
 const { ChatInputCommandInteraction, ApplicationCommandOptionType, DMChannel, Collection } = require("discord.js");
 const { Collections } = require("../../constants.js");
-const LocalizedErrors = require("../../JsonFiles/errorMessages.json");
+const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     /**
@@ -14,7 +14,7 @@ module.exports = {
         if ( !SlashCommand )
         {
             // Couldn't find the file for this Slash Command
-            return await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED_RARE });
+            return await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED_RARE });
         }
 
         // Checks for SubCommand or SubCommand-Groups, so that they can have their own Cooldowns
@@ -26,13 +26,13 @@ module.exports = {
         // DM Check
         if ( SlashCommand.Scope === 'DM' && !(slashInteraction.channel instanceof DMChannel) )
         {
-            return await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
+            return await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
         }
 
         // Guild Check
         if ( SlashCommand.Scope === 'GUILD' && (slashInteraction.channel instanceof DMChannel) )
         {
-            return await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
+            return await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
         }
 
 
@@ -65,30 +65,30 @@ module.exports = {
                     // MINUTES
                     case timeLeft >= 60 && timeLeft < 3600:
                         timeLeft = timeLeft / 60; // For UX
-                        let cooldownMinutesMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMinutesMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
 
                     // HOURS
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
-                        let cooldownHoursMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownHoursMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
                         timeLeft = timeLeft / 86400; // For UX
-                        let cooldownDaysMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownDaysMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownDaysMessage });
 
                     // MONTHS
                     case timeLeft >= 2.628e+6:
                         timeLeft = timeLeft / 2.628e+6; // For UX
-                        let cooldownMonthsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMonthsMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownMonthsMessage });
 
                     // SECONDS
                     default:
-                        let cooldownSecondsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownSecondsMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownSecondsMessage });
                 }
             }
@@ -109,11 +109,11 @@ module.exports = {
             //console.error(err);
             if ( slashInteraction.deferred )
             {
-                await slashInteraction.editReply({ content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+                await slashInteraction.editReply({ content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
             }
             else
             {
-                await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+                await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
             }
         }
 
@@ -136,13 +136,13 @@ module.exports = {
         // DM Check
         if ( SlashCommand.SubcommandScope[SubcommandName] === 'DM' && !(slashInteraction.channel instanceof DMChannel) )
         {
-            return await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
+            return await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
         }
  
         // Guild Check
         if ( SlashCommand.SubcommandScope[SubcommandName] === 'GUILD' && (slashInteraction.channel instanceof DMChannel) )
         {
-            return await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
+            return await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
         }
  
  
@@ -175,30 +175,30 @@ module.exports = {
                     // MINUTES
                     case timeLeft >= 60 && timeLeft < 3600:
                         timeLeft = timeLeft / 60; // For UX
-                        let cooldownMinutesMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMinutesMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
 
                     // HOURS
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
-                        let cooldownHoursMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownHoursMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
                         timeLeft = timeLeft / 86400; // For UX
-                        let cooldownDaysMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownDaysMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownDaysMessage });
 
                     // MONTHS
                     case timeLeft >= 2.628e+6:
                         timeLeft = timeLeft / 2.628e+6; // For UX
-                        let cooldownMonthsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMonthsMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownMonthsMessage });
 
                     // SECONDS
                     default:
-                        let cooldownSecondsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownSecondsMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownSecondsMessage });
                 }
             }
@@ -219,11 +219,11 @@ module.exports = {
             //console.error(err);
             if ( slashInteraction.deferred )
             {
-                await slashInteraction.editReply({ content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+                await slashInteraction.editReply({ content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
             }
             else
             {
-                await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+                await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
             }
         }
  
@@ -248,13 +248,13 @@ module.exports = {
         // DM Check
         if ( SlashCommand.SubcommandScope[CombinedSubcommandName] === 'DM' && !(slashInteraction.channel instanceof DMChannel) )
         {
-            return await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
+            return await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_DMS_ONLY });
         }
  
         // Guild Check
         if ( SlashCommand.SubcommandScope[CombinedSubcommandName] === 'GUILD' && (slashInteraction.channel instanceof DMChannel) )
         {
-            return await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
+            return await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GUILDS_ONLY });
         }
  
  
@@ -287,30 +287,30 @@ module.exports = {
                     // MINUTES
                     case timeLeft >= 60 && timeLeft < 3600:
                         timeLeft = timeLeft / 60; // For UX
-                        let cooldownMinutesMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMinutesMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MINUTES.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownMinutesMessage });
 
                     // HOURS
                     case timeLeft >= 3600 && timeLeft < 86400:
                         timeLeft = timeLeft / 3600; // For UX
-                        let cooldownHoursMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownHoursMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_HOURS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownHoursMessage });
 
                     // DAYS
                     case timeLeft >= 86400 && timeLeft < 2.628e+6:
                         timeLeft = timeLeft / 86400; // For UX
-                        let cooldownDaysMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownDaysMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_DAYS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownDaysMessage });
 
                     // MONTHS
                     case timeLeft >= 2.628e+6:
                         timeLeft = timeLeft / 2.628e+6; // For UX
-                        let cooldownMonthsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownMonthsMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_MONTHS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownMonthsMessage });
 
                     // SECONDS
                     default:
-                        let cooldownSecondsMessage = LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
+                        let cooldownSecondsMessage = LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_COOLDOWN_SECONDS.replace("{{commandCooldown}}", `${timeLeft.toFixed(1)}`);
                         return await slashInteraction.reply({ ephemeral: true, content: cooldownSecondsMessage });
                 }
             }
@@ -331,11 +331,11 @@ module.exports = {
             //console.error(err);
             if ( slashInteraction.deferred )
             {
-                await slashInteraction.editReply({ content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+                await slashInteraction.editReply({ content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
             }
             else
             {
-                await slashInteraction.reply({ ephemeral: true, content: LocalizedErrors[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
+                await slashInteraction.reply({ ephemeral: true, content: LocalizedStrings[slashInteraction.locale].SLASH_COMMAND_GENERIC_FAILED });
             }
         }
  

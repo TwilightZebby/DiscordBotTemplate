@@ -3,7 +3,7 @@ A simple template Discord Bot for myself.
 # Setup Guide
 *Assumes you've already cloned this, and have NodeJS*
 
-1. [Install Discord.JS](https://discord.js.org/#/docs/discord.js/main/general/welcome) (Currently this template is based on [D.JS v14.6.0](https://discord.js.org/#/docs/discord.js/14.6.0/general/welcome))
+1. [Install Discord.JS](https://discord.js.org/#/docs/discord.js/main/general/welcome) (Currently this template is based on [D.JS v14.7.0](https://discord.js.org/#/docs/discord.js/14.7.0/general/welcome))
 2. Ensure you have the following Folders ***in the root*** - as these are where the Bot will look for the Commands and Interactions
     - `./Interactions/Buttons/`
     - `./Interactions/ContextCommands/`
@@ -28,4 +28,4 @@ exports.ErrorLogGuildID = "GUILDID"; // Discord Guild ID for the Guild you use t
 5. Run `./index.js` to run the actual Bot. ( `node index.js` )
 
 > **Note**
-> The Localised Response Strings in `./JsonFiles/errorMessages.json` and `/JsonFiles/stringMessages.js` haven't been localised yet and still use British English. This is mainly because I don't have the abilities to accurately translate them myself.
+> The Localised Response Strings in `/JsonFiles/stringMessages.js` haven't been localised yet and still use British English. This is mainly because I don't have the abilities to accurately translate them myself.
