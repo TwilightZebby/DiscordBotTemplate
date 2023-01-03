@@ -1,6 +1,5 @@
 const { ApplicationCommandData, ContextMenuCommandInteraction, ApplicationCommandType } = require("discord.js");
 const { DiscordClient, Collections } = require("../../constants.js");
-const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     // Command's Name

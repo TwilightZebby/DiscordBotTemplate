@@ -1,6 +1,5 @@
 const { ModalSubmitInteraction, ModalMessageModalSubmitInteraction } = require("discord.js");
 const { DiscordClient, Collections } = require("../../constants.js");
-const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     // Modal's Name

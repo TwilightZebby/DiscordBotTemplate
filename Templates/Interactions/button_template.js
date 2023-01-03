@@ -1,6 +1,5 @@
 const { ButtonInteraction } = require("discord.js");
 const { DiscordClient, Collections } = require("../../constants.js");
-const LocalizedStrings = require("../../JsonFiles/stringMessages.json");
 
 module.exports = {
     // Button's Name
