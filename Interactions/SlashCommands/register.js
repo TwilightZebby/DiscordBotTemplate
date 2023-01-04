@@ -1,4 +1,4 @@
-const { ChatInputCommandInteraction, ChatInputApplicationCommandData, AutocompleteInteraction, ApplicationCommandType, ApplicationCommandOptionType, ApplicationCommandOptionChoiceData } = require("discord.js");
+const { ChatInputCommandInteraction, ChatInputApplicationCommandData, AutocompleteInteraction, ApplicationCommandType, ApplicationCommandOptionType, ApplicationCommandOptionChoiceData, PermissionFlagsBits } = require("discord.js");
 const { DiscordClient, Collections } = require("../../constants.js");
 const Config = require("../../config.js");
 
@@ -51,6 +51,7 @@ module.exports = {
         Data.description = this.Description;
         Data.type = ApplicationCommandType.ChatInput;
         Data.dmPermission = false;
+        Data.defaultMemberPermissions = PermissionFlagsBits.Administrator;
         Data.options = [
             {
                 type: ApplicationCommandOptionType.String,
