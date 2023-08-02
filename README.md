@@ -8,7 +8,7 @@ The License for this Project, and all of TwilightZebby's Projects, can be [found
 # Setup Guide
 *Assumes you've already cloned this, and have NodeJS*
 
-1. [Install Discord.JS](https://old.discordjs.dev/#/docs/discord.js/main/general/welcome) (Currently this template is based on [D.JS v14.10.2](https://old.discordjs.dev/#/docs/discord.js/14.10.2/general/welcome))
+1. [Install Discord.JS](https://old.discordjs.dev/#/docs/discord.js/main/general/welcome) (Currently this template is based on [D.JS v14.12.1](https://old.discordjs.dev/#/docs/discord.js/14.12.1/general/welcome))
 2. Ensure you have the following Folders ***in the root*** - as these are where the Bot will look for the Commands and Interactions
     - `./Interactions/Buttons/`
     - `./Interactions/ContextCommands/`
