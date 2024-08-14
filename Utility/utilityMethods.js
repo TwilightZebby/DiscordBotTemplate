@@ -24,8 +24,7 @@ export function checkPomelo(user) {
  * 
  * @returns {String} The highest-level display name - be it the Guild Nickname, User's Display Name, or User's Username
  */
-export function getHighestName(userMember, ignoreNicknames)
-{
+export function getHighestName(userMember, ignoreNicknames) {
     let highestName = "";
     let isPomelo = true;
 
