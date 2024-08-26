@@ -51,18 +51,28 @@ export const UtilityCollections = {
      * @type {Collection<String, *>} */
     Modals: new Collection(),
 
-    /** Holds all Cooldowns for Text-based Commands */
+    /** Holds all Cooldowns for Text-based Commands, mapped by "commandName_userID"
+     * @type {Collection<String, Number>} 
+     */
     TextCooldowns: new Collection(),
 
-    /** Holds all Cooldowns for Slash Commands */
+    /** Holds all Cooldowns for Slash Commands, mapped by "commandName_userID"
+     * @type {Collection<String, Number>} 
+     */
     SlashCooldowns: new Collection(),
 
-    /** Holds all Cooldowns for Context Commands */
+    /** Holds all Cooldowns for Context Commands, mapped by "commandName_userID"
+     * @type {Collection<String, Number>} 
+     */
     ContextCooldowns: new Collection(),
 
-    /** Holds all Cooldowns for Button Interactions */
+    /** Holds all Cooldowns for Button Interactions, mapped by "buttonName_userID"
+     * @type {Collection<String, Number>} 
+     */
     ButtonCooldowns: new Collection(),
 
-    /** Holds all Cooldowns for Select Menu Interactions */
+    /** Holds all Cooldowns for Select Menu Interactions, mapped by "selectName_userID"
+     * @type {Collection<String, Number>}
+     */
     SelectCooldowns: new Collection()
 };
