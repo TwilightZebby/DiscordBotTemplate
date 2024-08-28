@@ -30,7 +30,8 @@ module.exports = {
      * Cooldowns for specific Subcommands
      */
     // Where "exampleName" is either the Subcommand's Name, or a combo of both Subcommand Group Name and Subcommand Name
-    // In either "subcommandName" or "groupName_subcommandName" formats
+    //  For ease in handling cooldowns, this should also include the root Command name as a prefix
+    // In either "rootCommandName_subcommandName" or "rootCommandName_groupName_subcommandName" formats
     subcommandCooldown: {
         "exampleName": 3
     },
