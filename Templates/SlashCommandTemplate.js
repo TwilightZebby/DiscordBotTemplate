@@ -61,8 +61,9 @@ module.exports = {
     /** Handles given Autocomplete Interactions, should this Command use Autocomplete Options
      * @param {APIApplicationCommandAutocompleteInteraction} interaction 
      * @param {API} api
+     * @param {APIUser} interactionUser 
      */
-    async handleAutoComplete(interaction, api) {
+    async handleAutoComplete(interaction, api, interactionUser) {
         return await api.interactions.createAutocompleteResponse(interaction.id, interaction.token, { choices: [ {name: "Not implemented yet!", value: "NOT_IMPLEMENTED"} ] });
     },
 

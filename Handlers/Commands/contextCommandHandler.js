@@ -1,4 +1,4 @@
-import { APIContextMenuInteraction, ApplicationCommandOptionType, MessageFlags, APIUser } from 'discord-api-types/v10';
+import { APIContextMenuInteraction, MessageFlags, APIUser } from 'discord-api-types/v10';
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
 import { localize } from '../../Utility/localizeResponses';
