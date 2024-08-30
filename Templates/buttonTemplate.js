@@ -22,8 +22,9 @@ module.exports = {
     /** Runs the Button
      * @param {APIMessageComponentButtonInteraction} interaction 
      * @param {API} api
+     * @param {APIUser} interactionUser 
      */
-    async executeCommand(interaction, api) {
+    async executeButton(interaction, api, interactionUser) {
         return await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Button has not yet been implemented yet!" });
     }
 }

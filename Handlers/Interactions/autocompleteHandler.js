@@ -11,7 +11,7 @@ import { UtilityCollections } from '../../Utility/utilityConstants';
  * @param {APIApplicationCommandAutocompleteInteraction} interaction 
  * @param {API} api 
  * 
- * @returns {Boolean|'INVALID_COMMAND'|'COOLDOWN_ACTIVE'|'ERROR_GENERIC'} True if Command found, or custom error otherwise
+ * @returns {Boolean|'INVALID_COMMAND'|'COOLDOWN_ACTIVE'|'ERROR_GENERIC'} True if Interaction found, or custom error otherwise
  */
 export async function handleAutocomplete(interaction, api) {
     const Command = UtilityCollections.SlashCommands.get(interaction.data.name);

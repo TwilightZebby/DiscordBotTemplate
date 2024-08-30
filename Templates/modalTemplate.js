@@ -17,8 +17,9 @@ module.exports = {
     /** Runs the Modal
      * @param {APIModalSubmitInteraction|APIModalSubmitGuildInteraction|APIModalSubmitDMInteraction} interaction 
      * @param {API} api
+     * @param {APIUser} interactionUser 
      */
-    async executeCommand(interaction, api) {
+    async executeModal(interaction, api, interactionUser) {
         return await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Input Modal has not yet been implemented yet!" });
     }
 }

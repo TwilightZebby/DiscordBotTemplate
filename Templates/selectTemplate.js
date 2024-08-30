@@ -22,8 +22,9 @@ module.exports = {
     /** Runs the Select
      * @param {APIMessageComponentSelectMenuInteraction} interaction 
      * @param {API} api
+     * @param {APIUser} interactionUser 
      */
-    async executeCommand(interaction, api) {
+    async executeSelect(interaction, api, interactionUser) {
         return await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Select Menu has not yet been implemented yet!" });
     }
 }

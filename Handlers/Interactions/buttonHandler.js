@@ -1,4 +1,4 @@
-import { APIContextMenuInteraction, MessageFlags, APIUser } from 'discord-api-types/v10';
+import { APIMessageComponentButtonInteraction, MessageFlags, APIUser } from 'discord-api-types/v10';
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
 import { localize } from '../../Utility/localizeResponses';
@@ -8,22 +8,24 @@ import { localize } from '../../Utility/localizeResponses';
 //  Exports
 
 /**
- * Handles & Runs Context Commands
- * @param {APIContextMenuInteraction} interaction 
+ * Handles & Runs Buttons
+ * @param {APIMessageComponentButtonInteraction} interaction 
  * @param {API} api 
  * 
- * @returns {Boolean|'INVALID_COMMAND'|'COOLDOWN_ACTIVE'|'ERROR_GENERIC'} True if Command found, or custom error otherwise
+ * @returns {Boolean|'INVALID'|'COOLDOWN_ACTIVE'|'ERROR_GENERIC'} True if Interaction found, or custom error otherwise
  */
-export async function handleContextCommand(interaction, api) {
-    const Command = UtilityCollections.ContextCommands.get(interaction.data.name);
+export async function handleButton(interaction, api) {
+    // Grab button's name from Custom ID
+    const ButtonName = interaction.data.custom_id.split("_").shift();
+    const Button = UtilityCollections.Buttons.get(ButtonName);
 
-    // If no Command found, return
-    if ( !Command ) { 
+    // If no Button found, return
+    if ( !Button ) { 
         await api.interactions.reply(interaction.id, interaction.token, {
             flags: MessageFlags.Ephemeral,
-            content: `Error: This Context Command cannot be found in this App's code.`
+            content: `Error: This Button cannot be found in this App's code.`
         });
-        return 'INVALID_COMMAND';
+        return 'INVALID';
     }
 
 
@@ -38,10 +40,10 @@ export async function handleContextCommand(interaction, api) {
     // Cooldown Checks
     // Set initial values
     const Now = Date.now();
-    const CooldownStartTimestamp = UtilityCollections.ContextCooldowns.get(`${interaction.data.name}_${interactionUser.id}`);
-    const CooldownAmount = ( Command.cooldown || 3 ) * 1000;
+    const CooldownStartTimestamp = UtilityCollections.ButtonCooldowns.get(`${ButtonName}_${interactionUser.id}`);
+    const CooldownAmount = ( Button.cooldown || 3 ) * 1000;
 
-    // If an active Cooldown exists, show error. Otherwise, continue with executing Command
+    // If an active Cooldown exists, show error. Otherwise, continue with executing Interaction
     if ( CooldownStartTimestamp != undefined ) {
         const ExpirationTime = CooldownStartTimestamp + CooldownAmount;
 
@@ -53,7 +55,7 @@ export async function handleContextCommand(interaction, api) {
                 timeLeft = timeLeft / 60; // For UX
                 await api.interactions.reply(interaction.id, interaction.token, {
                     flags: MessageFlags.Ephemeral,
-                    content: localize('en-GB', 'CONTEXT_COMMAND_ERROR_COOLDOWN_MINUTES', timeLeft.toFixed(1))
+                    content: localize('en-GB', 'BUTTON_ERROR_COOLDOWN_MINUTES', timeLeft.toFixed(1))
                 });
                 return 'COOLDOWN_ACTIVE';
             }
@@ -62,7 +64,7 @@ export async function handleContextCommand(interaction, api) {
                 timeLeft = timeLeft / 3600; // For UX
                 await api.interactions.reply(interaction.id, interaction.token, {
                     flags: MessageFlags.Ephemeral,
-                    content: localize('en-GB', 'CONTEXT_COMMAND_ERROR_COOLDOWN_HOURS', timeLeft.toFixed(1))
+                    content: localize('en-GB', 'BUTTON_ERROR_COOLDOWN_HOURS', timeLeft.toFixed(1))
                 });
                 return 'COOLDOWN_ACTIVE';
             }
@@ -71,7 +73,7 @@ export async function handleContextCommand(interaction, api) {
                 timeLeft = timeLeft / 86400; // For UX
                 await api.interactions.reply(interaction.id, interaction.token, {
                     flags: MessageFlags.Ephemeral,
-                    content: localize('en-GB', 'CONTEXT_COMMAND_ERROR_COOLDOWN_DAYS', timeLeft.toFixed(1))
+                    content: localize('en-GB', 'BUTTON_ERROR_COOLDOWN_DAYS', timeLeft.toFixed(1))
                 });
                 return 'COOLDOWN_ACTIVE';
             }
@@ -80,7 +82,7 @@ export async function handleContextCommand(interaction, api) {
                 timeLeft = timeLeft / 2.628e+6; // For UX
                 await api.interactions.reply(interaction.id, interaction.token, {
                     flags: MessageFlags.Ephemeral,
-                    content: localize('en-GB', 'CONTEXT_COMMAND_ERROR_COOLDOWN_MONTHS', timeLeft.toFixed(1))
+                    content: localize('en-GB', 'BUTTON_ERROR_COOLDOWN_MONTHS', timeLeft.toFixed(1))
                 });
                 return 'COOLDOWN_ACTIVE';
             }
@@ -88,7 +90,7 @@ export async function handleContextCommand(interaction, api) {
             else {
                 await api.interactions.reply(interaction.id, interaction.token, {
                     flags: MessageFlags.Ephemeral,
-                    content: localize('en-GB', 'CONTEXT_COMMAND_ERROR_COOLDOWN_SECONDS', timeLeft.toFixed(1))
+                    content: localize('en-GB', 'BUTTON_ERROR_COOLDOWN_SECONDS', timeLeft.toFixed(1))
                 });
                 return 'COOLDOWN_ACTIVE';
             }
@@ -96,13 +98,13 @@ export async function handleContextCommand(interaction, api) {
     }
     else {
         // Create new Cooldown
-        UtilityCollections.ContextCooldowns.set(`${interaction.data.name}_${interactionUser.id}`, Now);
-        setTimeout(() => UtilityCollections.ContextCooldowns.delete(`${interaction.data.name}_${interactionUser.id}`), CooldownAmount);
+        UtilityCollections.ButtonCooldowns.set(`${ButtonName}_${interactionUser.id}`, Now);
+        setTimeout(() => UtilityCollections.ButtonCooldowns.delete(`${ButtonName}_${interactionUser.id}`), CooldownAmount);
     }
 
 
-    // Attempt to execute Command
-    try { await Command.execute(interaction, api, interactionUser); }
+    // Attempt to execute Interaction
+    try { await Button.executeButton(interaction, api, interactionUser); }
     catch (err) {
         // TODO: Add Error Logger
     }

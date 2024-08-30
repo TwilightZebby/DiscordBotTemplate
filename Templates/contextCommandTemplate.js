@@ -65,8 +65,9 @@ module.exports = {
     /** Runs the Command
      * @param {APIChatInputApplicationCommandInteraction} interaction 
      * @param {API} api
+     * @param {APIUser} interactionUser 
      */
-    async executeCommand(interaction, api) {
+    async executeCommand(interaction, api, interactionUser) {
         return await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Command has not yet been implemented yet!" });
     }
 }
