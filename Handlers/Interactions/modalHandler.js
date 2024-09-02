@@ -1,6 +1,7 @@
 import { APIModalSubmitInteraction, MessageFlags, APIUser } from 'discord-api-types/v10';
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
+import { logError } from '../../Utility/loggingModule';
 
 
 // *******************************
@@ -39,7 +40,8 @@ export async function handleModal(interaction, api) {
     // Attempt to execute Interaction
     try { await Modal.executeModal(interaction, api, interactionUser); }
     catch (err) {
-        // TODO: Add Error Logger
+        await logError(err, api);
+        // TODO: Add User Response
     }
 
     return;

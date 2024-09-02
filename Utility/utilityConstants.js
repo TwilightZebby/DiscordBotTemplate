@@ -76,3 +76,9 @@ export const UtilityCollections = {
      */
     SelectCooldowns: new Collection()
 };
+
+/** Should Debug Mode be enabled or not? If enabled, logs all errors/etc to a private Discord Channel
+ * @type {Boolean}
+ * @default False
+ */
+export let debugMode = false;

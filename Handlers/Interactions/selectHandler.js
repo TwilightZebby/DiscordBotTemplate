@@ -2,6 +2,7 @@ import { APIMessageComponentSelectMenuInteraction, MessageFlags, APIUser } from 
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
 import { localize } from '../../Utility/localizeResponses';
+import { logError } from '../../Utility/loggingModule';
 
 
 // *******************************
@@ -106,7 +107,8 @@ export async function handleSelect(interaction, api) {
     // Attempt to execute Interaction
     try { await Select.executeSelect(interaction, api, interactionUser); }
     catch (err) {
-        // TODO: Add Error Logger
+        await logError(err, api);
+        // TODO: Add User Response
     }
 
     return;

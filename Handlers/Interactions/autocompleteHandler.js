@@ -1,6 +1,7 @@
 import { APIApplicationCommandAutocompleteInteraction, APIUser } from 'discord-api-types/v10';
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
+import { logError } from '../../Utility/loggingModule';
 
 
 // *******************************
@@ -36,7 +37,8 @@ export async function handleAutocomplete(interaction, api) {
     // Attempt to execute interaction
     try { await Command.handleAutoComplete(interaction, api, interactionUser); }
     catch (err) {
-        // TODO: Add Error Logger
+        await logError(err, api);
+        // TODO: Add User Response
     }
 
     return;

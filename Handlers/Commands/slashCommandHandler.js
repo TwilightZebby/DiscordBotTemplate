@@ -2,6 +2,7 @@ import { APIChatInputApplicationCommandInteraction, ApplicationCommandOptionType
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
 import { localize } from '../../Utility/localizeResponses';
+import { logError } from '../../Utility/loggingModule';
 
 
 // *******************************
@@ -134,7 +135,8 @@ export async function handleSlashCommand(interaction, api) {
     // Attempt to execute Command
     try { await Command.execute(interaction, api, interactionUser, commandName); }
     catch (err) {
-        // TODO: Add Error Logger
+        await logError(err, api);
+        // TODO: Add User Response
     }
 
     return;

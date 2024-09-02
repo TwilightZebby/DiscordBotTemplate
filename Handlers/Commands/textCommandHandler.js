@@ -3,6 +3,7 @@ import { API } from '@discordjs/core';
 import { APP_DEVELOPER_USER_ID, DISCORD_APP_USER_ID, TEXT_COMMAND_PREFIX } from '../../config';
 import { UtilityCollections } from '../../Utility/utilityConstants';
 import { localize } from '../../Utility/localizeResponses';
+import { logError } from '../../Utility/loggingModule';
 
 
 /**
@@ -157,7 +158,8 @@ export async function handleTextCommand(message, api) {
     // Attempt to execute Command
     try { await Command.execute(message, api, Arguments); }
     catch (err) {
-        // TODO: Add Error Logger
+        await logError(err, api);
+        // TODO: Add User Response
     }
 
     return;

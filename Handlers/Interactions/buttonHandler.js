@@ -2,6 +2,7 @@ import { APIMessageComponentButtonInteraction, MessageFlags, APIUser } from 'dis
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
 import { localize } from '../../Utility/localizeResponses';
+import { logError } from '../../Utility/loggingModule';
 
 
 // *******************************
@@ -106,7 +107,8 @@ export async function handleButton(interaction, api) {
     // Attempt to execute Interaction
     try { await Button.executeButton(interaction, api, interactionUser); }
     catch (err) {
-        // TODO: Add Error Logger
+        await logError(err, api);
+        // TODO: Add User Response
     }
 
     return;
