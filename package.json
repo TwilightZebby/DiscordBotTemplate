@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/TwilightZebby/DiscordBotTemplate#readme",
   "dependencies": {
-    "@discordjs/collection": "^2.1.0",
-    "@discordjs/core": "^1.2.0",
-    "@discordjs/rest": "^2.3.0",
-    "@discordjs/ws": "^1.1.1",
+    "@discordjs/collection": "^2.1.1",
+    "@discordjs/core": "^2.0.0",
+    "@discordjs/rest": "^2.4.0",
+    "@discordjs/ws": "^2.0.0",
     "discord-api-types": "^0.37.99"
   }
 }
