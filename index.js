@@ -4,8 +4,16 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 
 import { DiscordGateway, DiscordClient, UtilityCollections } from './Utility/utilityConstants';
-import { MessageType } from 'discord-api-types/v10';
+import { InteractionType, MessageType } from 'discord-api-types/v10';
 import { handleTextCommand } from './Handlers/Commands/textCommandHandler';
+import { isChatInputApplicationCommandInteraction, isContextMenuApplicationCommandInteraction, isMessageComponentButtonInteraction, isMessageComponentSelectMenuInteraction } from 'discord-api-types/utils';
+import { handleSlashCommand } from './Handlers/Commands/slashCommandHandler';
+import { handleContextCommand } from './Handlers/Commands/contextCommandHandler';
+import { handleButton } from './Handlers/Interactions/buttonHandler';
+import { handleSelect } from './Handlers/Interactions/selectHandler';
+import { handleAutocomplete } from './Handlers/Interactions/autocompleteHandler';
+import { handleModal } from './Handlers/Interactions/modalHandler';
+import { logInfo } from './Utility/loggingModule';
 
 
 
@@ -162,7 +170,6 @@ const SystemMessageTypes = [
 ];
 
 DiscordClient.on(GatewayDispatchEvents.MessageCreate, async ({ data: message, api }) => {
-
     // Bots/Apps
     if ( message.author.bot ) { return; }
 
@@ -176,12 +183,40 @@ DiscordClient.on(GatewayDispatchEvents.MessageCreate, async ({ data: message, ap
 
 
     // Check for (and handle) Commands
-    const textCommandStatus = await handleTextCommand(message, api);
+    await handleTextCommand(message, api);
 
     // Placeholder for any conditionals/extra code to run based off the result of handling Text Commands above
 
     return;
+});
 
+
+
+
+
+
+
+
+
+// *******************************
+//  Discord Interaction Create Event
+DiscordClient.on(GatewayDispatchEvents.InteractionCreate, async ({ data: interaction, api }) => {
+    // Slash Commands
+    if ( isChatInputApplicationCommandInteraction(interaction) ) { await handleSlashCommand(interaction, api); }
+    // Context Commands
+    else if ( isContextMenuApplicationCommandInteraction(interaction) ) { await handleContextCommand(interaction, api); }
+    // Buttons
+    else if ( isMessageComponentButtonInteraction(interaction) ) { await handleButton(interaction, api); }
+    // Selects
+    else if ( isMessageComponentSelectMenuInteraction(interaction) ) { await handleSelect(interaction, api); }
+    // Autocomplete
+    else if ( interaction.type === InteractionType.ApplicationCommandAutocomplete ) { await handleAutocomplete(interaction, api); }
+    // Modals
+    else if ( interaction.type === InteractionType.ModalSubmit ) { await handleModal(interaction, api); }
+    // Others
+    else { await logInfo(`****Unrecognised or new unhandled Interaction Type triggered: ${interaction.type}`, api); }
+
+    return;
 });
 
 
