@@ -25,6 +25,8 @@ module.exports = {
      * @param {APIUser} interactionUser 
      */
     async executeButton(interaction, api, interactionUser) {
-        return await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Button has not yet been implemented yet!" });
+        await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Button has not yet been implemented yet!" });
+
+        return;
     }
 }

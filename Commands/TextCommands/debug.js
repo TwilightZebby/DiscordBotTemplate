@@ -1,12 +1,13 @@
 import { GatewayMessageCreateDispatchData, MessageReferenceType } from 'discord-api-types/v10';
 import { API } from '@discordjs/core';
+import { debugMode } from '../../Utility/utilityConstants';
 
 
 module.exports = {
     /** Command's Name, in fulllowercase (can include hyphens)
      * @type {String}
      */
-    name: "command-name",
+    name: "debug",
 
     /** Aliases of the Command's Name (ie: alt names for the Command)
      * @type {Array<String>}
@@ -16,7 +17,7 @@ module.exports = {
     /** Command's Description
      * @type {String}
      */
-    description: "Command Description",
+    description: "Toggles Debug Mode for this App",
 
     /** Command's cooldown, in seconds (whole number integers!)
      * @type {Number}
@@ -54,11 +55,26 @@ module.exports = {
      * @param {Array<String>} commandArguments
      */
     async executeCommand(message, api, commandArguments) {
-        await api.channels.createMessage(message.channel_id, {
-            allowed_mentions: { replied_user: false, parse: [] },
-            message_reference: { type: MessageReferenceType.Default, guild_id: message.guild_id, channel_id: message.channel_id, message_id: message.id },
-            content: "Sorry, this Text Command hasn't been implemented yet!"
-        });
+        
+        // Toggle Debug Mode
+        if ( debugMode ) {
+            debugMode = false;
+
+            await api.channels.createMessage(message.channel_id, {
+                allowed_mentions: { replied_user: false, parse: [] },
+                message_reference: { type: MessageReferenceType.Default, guild_id: message.guild_id, channel_id: message.channel_id, message_id: message.id },
+                content: "Successfully turned **off** Debug Mode."
+            });
+        }
+        else {
+            debugMode = true;
+
+            await api.channels.createMessage(message.channel_id, {
+                allowed_mentions: { replied_user: false, parse: [] },
+                message_reference: { type: MessageReferenceType.Default, guild_id: message.guild_id, channel_id: message.channel_id, message_id: message.id },
+                content: "Successfully turned **on** Debug Mode."
+            });
+        }
 
         return;
     }

@@ -64,7 +64,9 @@ module.exports = {
      * @param {APIUser} interactionUser 
      */
     async handleAutoComplete(interaction, api, interactionUser) {
-        return await api.interactions.createAutocompleteResponse(interaction.id, interaction.token, { choices: [ {name: "Not implemented yet!", value: "NOT_IMPLEMENTED"} ] });
+        await api.interactions.createAutocompleteResponse(interaction.id, interaction.token, { choices: [ {name: "Not implemented yet!", value: "NOT_IMPLEMENTED"} ] });
+
+        return;
     },
 
     /** Runs the Command
@@ -74,6 +76,8 @@ module.exports = {
      * @param {String} usedCommandName 
      */
     async executeCommand(interaction, api, interactionUser, usedCommandName) {
-        return await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Command has not yet been implemented yet!" });
+        await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Command has not yet been implemented yet!" });
+
+        return;
     }
 }
