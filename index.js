@@ -4,6 +4,8 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 
 import { DiscordGateway, DiscordClient, UtilityCollections } from './Utility/utilityConstants';
+import { MessageType } from 'discord-api-types/v10';
+import { handleTextCommand } from './Handlers/Commands/textCommandHandler';
 
 
 
@@ -121,6 +123,67 @@ DiscordClient.once(GatewayDispatchEvents.Ready, async () => {
 
     console.log(`Online & Ready!`);
 });
+
+
+
+
+
+
+
+
+
+// *******************************
+//  Debugging and Error Logging
+process.on('warning', console.warn);
+process.on('unhandledRejection', console.error);
+
+
+
+
+
+
+
+
+
+// *******************************
+//  Discord Message Create Event
+const SystemMessageTypes = [
+    MessageType.RecipientAdd, MessageType.RecipientRemove, MessageType.Call, MessageType.ChannelNameChange,
+    MessageType.ChannelIconChange, MessageType.ChannelPinnedMessage, MessageType.UserJoin, MessageType.GuildBoost,
+    MessageType.GuildBoostTier1, MessageType.GuildBoostTier2, MessageType.GuildBoostTier3, MessageType.ChannelFollowAdd,
+    MessageType.GuildDiscoveryDisqualified, MessageType.GuildDiscoveryRequalified, MessageType.GuildDiscoveryGracePeriodInitialWarning,
+    MessageType.GuildDiscoveryGracePeriodFinalWarning, MessageType.ThreadCreated, MessageType.GuildInviteReminder, MessageType.AutoModerationAction,
+    MessageType.RoleSubscriptionPurchase, MessageType.InteractionPremiumUpsell, MessageType.StageStart, MessageType.StageEnd, MessageType.StageSpeaker,
+    MessageType.StageTopic, MessageType.GuildApplicationPremiumSubscription, MessageType.GuildIncidentAlertModeEnabled,
+    MessageType.GuildIncidentAlertModeDisabled, MessageType.GuildIncidentReportRaid, MessageType.GuildIncidentReportFalseAlarm,
+    // The following haven't been added to Discord API Types yet? :thinking:
+    44, // PURCHASE_NOTIFICATION
+    46 // POLL_RESULT
+];
+
+DiscordClient.on(GatewayDispatchEvents.MessageCreate, async ({ data: message, api }) => {
+
+    // Bots/Apps
+    if ( message.author.bot ) { return; }
+
+    // System Messages
+    if ( message.author.system || SystemMessageTypes.includes(message.type) ) { return; }
+
+    // No need to filter out messages from DMs since that can be controlled via the Intents system!
+    // Can't even check that anyways without an API call since Discord's API doesn't provide even a partial Channel object with Messages
+
+    // Wish I could add a safe-guard check for guild.avaliable BUT DISCORD'S API DOESN'T PROVIDE EVEN A PARTIAL GUILD OBJECT WITH MESSAGES EITHER :upside_down:
+
+
+    // Check for (and handle) Commands
+    const textCommandStatus = await handleTextCommand(message, api);
+
+    // Placeholder for any conditionals/extra code to run based off the result of handling Text Commands above
+
+    return;
+
+});
+
 
 
 
