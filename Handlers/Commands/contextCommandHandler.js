@@ -22,7 +22,7 @@ export async function handleContextCommand(interaction, api) {
     if ( !Command ) { 
         await api.interactions.reply(interaction.id, interaction.token, {
             flags: MessageFlags.Ephemeral,
-            content: `Error: This Context Command cannot be found in this App's code.`
+            content: localize('en-GB', 'CONTEXT_COMMAND_ERROR_GENERIC', timeLeft.toFixed(1))
         });
         return 'INVALID_COMMAND';
     }
@@ -106,7 +106,10 @@ export async function handleContextCommand(interaction, api) {
     try { await Command.execute(interaction, api, interactionUser); }
     catch (err) {
         await logError(err, api);
-        // TODO: Add User Response
+        await api.interactions.reply(interaction.id, interaction.token, {
+            flags: MessageFlags.Ephemeral,
+            content: localize('en-GB', 'CONTEXT_COMMAND_ERROR_GENERIC', timeLeft.toFixed(1))
+        });
     }
 
     return;

@@ -22,7 +22,7 @@ export async function handleSlashCommand(interaction, api) {
     if ( !Command ) { 
         await api.interactions.reply(interaction.id, interaction.token, {
             flags: MessageFlags.Ephemeral,
-            content: `Error: This Slash Command cannot be found in this App's code.`
+            content: localize('en-GB', 'SLASH_COMMAND_ERROR_GENERIC', timeLeft.toFixed(1))
         });
         return 'INVALID_COMMAND';
     }
@@ -136,7 +136,10 @@ export async function handleSlashCommand(interaction, api) {
     try { await Command.execute(interaction, api, interactionUser, commandName); }
     catch (err) {
         await logError(err, api);
-        // TODO: Add User Response
+        await api.interactions.reply(interaction.id, interaction.token, {
+            flags: MessageFlags.Ephemeral,
+            content: localize('en-GB', 'SLASH_COMMAND_ERROR_GENERIC', timeLeft.toFixed(1))
+        });
     }
 
     return;

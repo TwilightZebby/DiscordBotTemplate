@@ -24,7 +24,7 @@ export async function handleButton(interaction, api) {
     if ( !Button ) { 
         await api.interactions.reply(interaction.id, interaction.token, {
             flags: MessageFlags.Ephemeral,
-            content: `Error: This Button cannot be found in this App's code.`
+            content: localize('en-GB', 'BUTTON_ERROR_GENERIC', timeLeft.toFixed(1))
         });
         return 'INVALID';
     }
@@ -108,7 +108,10 @@ export async function handleButton(interaction, api) {
     try { await Button.executeButton(interaction, api, interactionUser); }
     catch (err) {
         await logError(err, api);
-        // TODO: Add User Response
+        await api.interactions.reply(interaction.id, interaction.token, {
+            flags: MessageFlags.Ephemeral,
+            content: localize('en-GB', 'BUTTON_ERROR_GENERIC', timeLeft.toFixed(1))
+        });
     }
 
     return;

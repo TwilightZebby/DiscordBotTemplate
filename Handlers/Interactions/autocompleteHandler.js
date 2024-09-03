@@ -2,6 +2,7 @@ import { APIApplicationCommandAutocompleteInteraction, APIUser } from 'discord-a
 import { API } from '@discordjs/core';
 import { UtilityCollections } from '../../Utility/utilityConstants';
 import { logError } from '../../Utility/loggingModule';
+import { localize } from '../../Utility/localizeResponses';
 
 
 // *******************************
@@ -20,7 +21,7 @@ export async function handleAutocomplete(interaction, api) {
     // If no Command found, return
     if ( !Command ) { 
         await api.interactions.createAutocompleteResponse(interaction.id, interaction.token, {
-            choices: [{ name: `Error: Option not found in App's code`, value: `INVALID_COMMAND_OPTION` }]
+            choices: [{ name: localize(interaction.locale, 'AUTOCOMPLETE_ERROR_GENERIC'), value: `INVALID_COMMAND_OPTION` }]
         });
         return 'INVALID_COMMAND';
     }
@@ -38,7 +39,9 @@ export async function handleAutocomplete(interaction, api) {
     try { await Command.handleAutoComplete(interaction, api, interactionUser); }
     catch (err) {
         await logError(err, api);
-        // TODO: Add User Response
+        await api.interactions.createAutocompleteResponse(interaction.id, interaction.token, {
+            choices: [{ name: localize(interaction.locale, 'AUTOCOMPLETE_ERROR_GENERIC'), value: `AUTOCOMPLETE_ERROR` }]
+        });
     }
 
     return;

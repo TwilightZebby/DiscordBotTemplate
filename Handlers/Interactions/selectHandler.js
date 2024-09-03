@@ -24,7 +24,7 @@ export async function handleSelect(interaction, api) {
     if ( !Select ) { 
         await api.interactions.reply(interaction.id, interaction.token, {
             flags: MessageFlags.Ephemeral,
-            content: `Error: This Select Menu cannot be found in this App's code.`
+            content: localize('en-GB', 'SELECT_ERROR_GENERIC', timeLeft.toFixed(1))
         });
         return 'INVALID';
     }
@@ -108,7 +108,10 @@ export async function handleSelect(interaction, api) {
     try { await Select.executeSelect(interaction, api, interactionUser); }
     catch (err) {
         await logError(err, api);
-        // TODO: Add User Response
+        await api.interactions.reply(interaction.id, interaction.token, {
+            flags: MessageFlags.Ephemeral,
+            content: localize('en-GB', 'SELECT_ERROR_GENERIC', timeLeft.toFixed(1))
+        });
     }
 
     return;

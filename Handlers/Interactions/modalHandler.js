@@ -23,7 +23,7 @@ export async function handleModal(interaction, api) {
     if ( !Modal ) { 
         await api.interactions.reply(interaction.id, interaction.token, {
             flags: MessageFlags.Ephemeral,
-            content: `Error: This Modal cannot be found in this App's code.`
+            content: localize('en-GB', 'MODAL_ERROR_GENERIC', timeLeft.toFixed(1))
         });
         return 'INVALID';
     }
@@ -41,7 +41,10 @@ export async function handleModal(interaction, api) {
     try { await Modal.executeModal(interaction, api, interactionUser); }
     catch (err) {
         await logError(err, api);
-        // TODO: Add User Response
+        await api.interactions.reply(interaction.id, interaction.token, {
+            flags: MessageFlags.Ephemeral,
+            content: localize('en-GB', 'MODAL_ERROR_GENERIC', timeLeft.toFixed(1))
+        });
     }
 
     return;
