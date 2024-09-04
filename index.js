@@ -1,59 +1,118 @@
-const { RateLimitError, DMChannel } = require("discord.js");
-const fs = require("fs");
+import { GatewayDispatchEvents, PresenceUpdateStatus } from '@discordjs/core';
 
-const { DiscordClient, Collections } = require("./constants.js");
-const Config = require("./config.js");
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+
+import { DiscordGateway, DiscordClient, UtilityCollections } from './Utility/utilityConstants';
+import { InteractionType, MessageType } from 'discord-api-types/v10';
+import { handleTextCommand } from './Handlers/Commands/textCommandHandler';
+import { isChatInputApplicationCommandInteraction, isContextMenuApplicationCommandInteraction, isMessageComponentButtonInteraction, isMessageComponentSelectMenuInteraction } from 'discord-api-types/utils';
+import { handleSlashCommand } from './Handlers/Commands/slashCommandHandler';
+import { handleContextCommand } from './Handlers/Commands/contextCommandHandler';
+import { handleButton } from './Handlers/Interactions/buttonHandler';
+import { handleSelect } from './Handlers/Interactions/selectHandler';
+import { handleAutocomplete } from './Handlers/Interactions/autocompleteHandler';
+import { handleModal } from './Handlers/Interactions/modalHandler';
+import { logInfo } from './Utility/loggingModule';
 
 
 
-/******************************************************************************* */
-// BRING IN FILES FOR COMMANDS AND INTERACTIONS
-// Text Commands
-const TextCommandFiles = fs.readdirSync("./TextCommands").filter(file => file.endsWith(".js"));
-for ( const File of TextCommandFiles )
-{
-    const TempCommand = require(`./TextCommands/${File}`);
-    Collections.TextCommands.set(TempCommand.Name, TempCommand);
+
+
+
+
+
+
+
+// *******************************
+//  Bring in files for Commands & Interactions
+
+//  Text Commands
+const TextCommandFiles = fs.readdirSync('./Commands/TextCommands').filter(file => file.endsWith('.js'));
+
+for ( const File of TextCommandFiles ) {
+    const TempFile = require(`./Commands/TextCommands/${File}`);
+    UtilityCollections.TextCommands.set(TempFile.name, TempFile);
 }
 
 // Slash Commands
-const SlashCommandFiles = fs.readdirSync("./Interactions/SlashCommands").filter(file => file.endsWith(".js"));
-for ( const File of SlashCommandFiles )
-{
-    const TempCommand = require(`./Interactions/SlashCommands/${File}`);
-    Collections.SlashCommands.set(TempCommand.Name, TempCommand);
+const SlashFolderPath = path.join(__dirname, 'Commands/SlashCommands');
+const SlashFolders = fs.readdirSync(SlashFolderPath);
+
+for ( const Folder of SlashFolders ) {
+    const SlashCommandPath  = path.join(SlashFolderPath, Folder);
+    const SlashCommandFiles = fs.readdirSync(SlashCommandPath).filter(file => file.endsWith(".js"));
+
+    for ( const File of SlashCommandFiles ) {
+        const FilePath = path.join(SlashCommandPath, File);
+        const TempFile = require(FilePath);
+        if ( 'execute' in TempFile && 'registerData' in TempFile ) { UtilityCollections.SlashCommands.set(TempFile.name, TempFile); }
+        else { console.warn(`[WARNING] The Slash Command at ${FilePath} is missing required "execute" or "registerData" methods.`); }
+    }
 }
 
 // Context Commands
-const ContextCommandFiles = fs.readdirSync("./Interactions/ContextCommands").filter(file => file.endsWith(".js"));
-for ( const File of ContextCommandFiles )
-{
-    const TempCommand = require(`./Interactions/ContextCommands/${File}`);
-    Collections.ContextCommands.set(TempCommand.Name, TempCommand);
+const ContextFolderPath = path.join(__dirname, 'Commands/ContextCommands');
+const ContextFolders = fs.readdirSync(ContextFolderPath);
+
+for ( const Folder of ContextFolders ) {
+    const ContextCommandPath  = path.join(ContextFolderPath, Folder);
+    const ContextCommandFiles = fs.readdirSync(ContextCommandPath).filter(file => file.endsWith(".js"));
+
+    for ( const File of ContextCommandFiles ) {
+        const FilePath = path.join(ContextCommandPath, File);
+        const TempFile = require(FilePath);
+        if ( 'execute' in TempFile && 'registerData' in TempFile ) { UtilityCollections.ContextCommands.set(TempFile.name, TempFile); }
+        else { console.warn(`[WARNING] The Context Command at ${FilePath} is missing required "execute" or "registerData" methods.`); }
+    }
 }
 
 // Buttons
-const ButtonFiles = fs.readdirSync("./Interactions/Buttons").filter(file => file.endsWith(".js"));
-for ( const File of ButtonFiles )
-{
-    const TempButton = require(`./Interactions/Buttons/${File}`);
-    Collections.Buttons.set(TempButton.Name, TempButton);
+const ButtonFolderPath = path.join(__dirname, 'Interactions/Buttons');
+const ButtonFolders = fs.readdirSync(ButtonFolderPath);
+
+for ( const Folder of ButtonFolders ) {
+    const ButtonPath  = path.join(ButtonFolderPath, Folder);
+    const ButtonFiles = fs.readdirSync(ButtonPath).filter(file => file.endsWith(".js"));
+
+    for ( const File of ButtonFiles ) {
+        const FilePath = path.join(ButtonPath, File);
+        const TempFile = require(FilePath);
+        if ( 'execute' in TempFile ) { UtilityCollections.Buttons.set(TempFile.name, TempFile); }
+        else { console.warn(`[WARNING] The Button at ${FilePath} is missing required "execute" method.`); }
+    }
 }
 
 // Selects
-const SelectFiles = fs.readdirSync("./Interactions/Selects").filter(file => file.endsWith(".js"));
-for ( const File of SelectFiles )
-{
-    const TempSelect = require(`./Interactions/Selects/${File}`);
-    Collections.Selects.set(TempSelect.Name, TempSelect);
+const SelectFolderPath = path.join(__dirname, 'Interactions/Selects');
+const SelectFolders = fs.readdirSync(SelectFolderPath);
+
+for ( const Folder of SelectFolders ) {
+    const SelectPath  = path.join(SelectFolderPath, Folder);
+    const SelectFiles = fs.readdirSync(SelectPath).filter(file => file.endsWith(".js"));
+
+    for ( const File of SelectFiles ) {
+        const FilePath = path.join(SelectPath, File);
+        const TempFile = require(FilePath);
+        if ( 'execute' in TempFile ) { UtilityCollections.Selects.set(TempFile.name, TempFile); }
+        else { console.warn(`[WARNING] The Select at ${FilePath} is missing required "execute" method.`); }
+    }
 }
 
 // Modals
-const ModalFiles = fs.readdirSync("./Interactions/Modals").filter(file => file.endsWith(".js"));
-for ( const File of ModalFiles )
-{
-    const TempModal = require(`./Interactions/Modals/${File}`);
-    Collections.Modals.set(TempModal.Name, TempModal);
+const ModalFolderPath = path.join(__dirname, 'Interactions/Modals');
+const ModalFolders = fs.readdirSync(ModalFolderPath);
+
+for ( const Folder of ModalFolders ) {
+    const ModalPath  = path.join(ModalFolderPath, Folder);
+    const ModalFiles = fs.readdirSync(ModalPath).filter(file => file.endsWith(".js"));
+
+    for ( const File of ModalFiles ) {
+        const FilePath = path.join(ModalPath, File);
+        const TempFile = require(FilePath);
+        if ( 'execute' in TempFile ) { UtilityCollections.Modals.set(TempFile.name, TempFile); }
+        else { console.warn(`[WARNING] The Modal at ${FilePath} is missing required "execute" method.`); }
+    }
 }
 
 
@@ -63,11 +122,14 @@ for ( const File of ModalFiles )
 
 
 
-/******************************************************************************* */
-// DISCORD - READY EVENT
-DiscordClient.once('ready', () => {
-    DiscordClient.user.setPresence({ status: 'online' });
-    console.log(`${DiscordClient.user.tag} is online and ready!`);
+
+// *******************************
+//  Discord Ready Event
+DiscordClient.once(GatewayDispatchEvents.Ready, async () => {
+    // Set status
+    await DiscordClient.updatePresence(0, { status: PresenceUpdateStatus.Online });
+
+    console.log(`Online & Ready!`);
 });
 
 
@@ -77,20 +139,11 @@ DiscordClient.once('ready', () => {
 
 
 
-/******************************************************************************* */
-// DEBUGGING AND ERROR LOGGING
-// Warnings
-process.on('warning', (warning) => { return console.warn("***WARNING: ", warning); });
-DiscordClient.on('warn', (warning) => { return console.warn("***DISCORD WARNING: ", warning); });
 
-// Unhandled Promise Rejections
-process.on('unhandledRejection', (err) => { return console.error("***UNHANDLED PROMISE REJECTION: ", err); });
-
-// Discord Errors
-DiscordClient.on('error', (err) => { return console.error("***DISCORD ERROR: ", err); });
-
-// Discord Rate Limit - Only uncomment when debugging
-//DiscordClient.rest.on('rateLimited', (RateLimitError) => { return console.log("***DISCORD RATELIMIT HIT: ", RateLimitError); });
+// *******************************
+//  Debugging and Error Logging
+process.on('warning', console.warn);
+process.on('unhandledRejection', console.error);
 
 
 
@@ -99,45 +152,42 @@ DiscordClient.on('error', (err) => { return console.error("***DISCORD ERROR: ", 
 
 
 
-/******************************************************************************* */
-// DISCORD - MESSAGE CREATE EVENT
-const TextCommandHandler = require("./BotModules/Handlers/TextCommandHandler.js");
 
-DiscordClient.on('messageCreate', async (message) => {
-    // Partials
-    if ( message.partial ) { return; }
+// *******************************
+//  Discord Message Create Event
+const SystemMessageTypes = [
+    MessageType.RecipientAdd, MessageType.RecipientRemove, MessageType.Call, MessageType.ChannelNameChange,
+    MessageType.ChannelIconChange, MessageType.ChannelPinnedMessage, MessageType.UserJoin, MessageType.GuildBoost,
+    MessageType.GuildBoostTier1, MessageType.GuildBoostTier2, MessageType.GuildBoostTier3, MessageType.ChannelFollowAdd,
+    MessageType.GuildDiscoveryDisqualified, MessageType.GuildDiscoveryRequalified, MessageType.GuildDiscoveryGracePeriodInitialWarning,
+    MessageType.GuildDiscoveryGracePeriodFinalWarning, MessageType.ThreadCreated, MessageType.GuildInviteReminder, MessageType.AutoModerationAction,
+    MessageType.RoleSubscriptionPurchase, MessageType.InteractionPremiumUpsell, MessageType.StageStart, MessageType.StageEnd, MessageType.StageSpeaker,
+    MessageType.StageTopic, MessageType.GuildApplicationPremiumSubscription, MessageType.GuildIncidentAlertModeEnabled,
+    MessageType.GuildIncidentAlertModeDisabled, MessageType.GuildIncidentReportRaid, MessageType.GuildIncidentReportFalseAlarm,
+    // The following haven't been added to Discord API Types yet? :thinking:
+    44, // PURCHASE_NOTIFICATION
+    46 // POLL_RESULT
+];
 
-    // Bots
+DiscordClient.on(GatewayDispatchEvents.MessageCreate, async ({ data: message, api }) => {
+    // Bots/Apps
     if ( message.author.bot ) { return; }
 
     // System Messages
-    if ( message.system || message.author.system ) { return; }
+    if ( message.author.system || SystemMessageTypes.includes(message.type) ) { return; }
 
-    // DM Channel Messages
-    if ( message.channel instanceof DMChannel ) { return; }
+    // No need to filter out messages from DMs since that can be controlled via the Intents system!
+    // Can't even check that anyways without an API call since Discord's API doesn't provide even a partial Channel object with Messages
 
-    // Safe-guard against Discord Outages
-    if ( !message.guild.available ) { return; }
-
+    // Wish I could add a safe-guard check for guild.avaliable BUT DISCORD'S API DOESN'T PROVIDE EVEN A PARTIAL GUILD OBJECT WITH MESSAGES EITHER :upside_down:
 
 
     // Check for (and handle) Commands
-    let textCommandStatus = await TextCommandHandler.Main(message);
-    if ( textCommandStatus === false )
-    {
-        // No Command detected
-        return;
-    }
-    else if ( textCommandStatus === null )
-    {
-        // Prefix was detected, but wasn't a command on the bot
-        return;
-    }
-    else
-    {
-        // Command failed or successful
-        return;
-    }
+    await handleTextCommand(message, api);
+
+    // Placeholder for any conditionals/extra code to run based off the result of handling Text Commands above
+
+    return;
 });
 
 
@@ -147,51 +197,26 @@ DiscordClient.on('messageCreate', async (message) => {
 
 
 
-/******************************************************************************* */
-// DISCORD - INTERACTION CREATE EVENT
-const SlashCommandHandler = require("./BotModules/Handlers/SlashCommandHandler.js");
-const ContextCommandHandler = require("./BotModules/Handlers/ContextCommandHandler.js");
-const ButtonHandler = require("./BotModules/Handlers/ButtonHandler.js");
-const SelectHandler = require("./BotModules/Handlers/SelectHandler.js");
-const AutocompleteHandler = require("./BotModules/Handlers/AutocompleteHandler.js");
-const ModalHandler = require("./BotModules/Handlers/ModalHandler.js");
 
-DiscordClient.on('interactionCreate', async (interaction) => {
-    if ( interaction.isChatInputCommand() )
-    {
-        // Slash Command
-        return await SlashCommandHandler.Main(interaction);
-    }
-    else if ( interaction.isContextMenuCommand() )
-    {
-        // Context Command
-        return await ContextCommandHandler.Main(interaction);
-    }
-    else if ( interaction.isButton() )
-    {
-        // Button
-        return await ButtonHandler.Main(interaction);
-    }
-    else if ( interaction.isAnySelectMenu() )
-    {
-        // Select
-        return await SelectHandler.Main(interaction);
-    }
-    else if ( interaction.isAutocomplete() )
-    {
-        // Autocomplete
-        return await AutocompleteHandler.Main(interaction);
-    }
-    else if ( interaction.isModalSubmit() )
-    {
-        // Modal
-        return await ModalHandler.Main(interaction);
-    }
-    else
-    {
-        // Unknown or unhandled new type of Interaction
-        return console.log(`****Unrecognised or new unhandled Interaction type triggered:\n${interaction.type}\n${interaction}`);
-    }
+// *******************************
+//  Discord Interaction Create Event
+DiscordClient.on(GatewayDispatchEvents.InteractionCreate, async ({ data: interaction, api }) => {
+    // Slash Commands
+    if ( isChatInputApplicationCommandInteraction(interaction) ) { await handleSlashCommand(interaction, api); }
+    // Context Commands
+    else if ( isContextMenuApplicationCommandInteraction(interaction) ) { await handleContextCommand(interaction, api); }
+    // Buttons
+    else if ( isMessageComponentButtonInteraction(interaction) ) { await handleButton(interaction, api); }
+    // Selects
+    else if ( isMessageComponentSelectMenuInteraction(interaction) ) { await handleSelect(interaction, api); }
+    // Autocomplete
+    else if ( interaction.type === InteractionType.ApplicationCommandAutocomplete ) { await handleAutocomplete(interaction, api); }
+    // Modals
+    else if ( interaction.type === InteractionType.ModalSubmit ) { await handleModal(interaction, api); }
+    // Others
+    else { await logInfo(`****Unrecognised or new unhandled Interaction Type triggered: ${interaction.type}`, api); }
+
+    return;
 });
 
 
@@ -201,6 +226,9 @@ DiscordClient.on('interactionCreate', async (interaction) => {
 
 
 
-/******************************************************************************* */
 
-DiscordClient.login(Config.TOKEN);
+
+
+// *******************************
+//  Connection Methods
+DiscordGateway.connect();

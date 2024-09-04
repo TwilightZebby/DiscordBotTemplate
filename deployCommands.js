@@ -1,38 +1,39 @@
-const { DiscordClient } = require("./constants.js");
-const Config = require("./config.js");
+import { GatewayDispatchEvents } from "discord-api-types/v10";
+import { DiscordClient, DiscordGateway } from "./Utility/utilityConstants";
+import { DISCORD_APP_USER_ID } from "./config";
 
-// Bring in Slash Commands for (un)registering
-//const RegisterCommand = require('./Interactions/SlashCommands/register.js');
-//const UnregisterCommand = require('./Interactions/SlashCommands/unregister.js');
+// SLASH COMMANDS
+//.
 
-// Login Bot
-DiscordClient.login(Config.TOKEN);
+// Array for bulk-registering Commands
+const AllCommands = [];
 
-// Wait for Ready
-DiscordClient.once('ready', async () => {
-    // Register Command
-    //await DiscordClient.application.commands.create(RegisterCommand.registerData(), Config.ErrorLogGuildID);
 
-    // UNregister ALL Commands
-    //await DiscordClient.application.commands.set([], Config.ErrorLogGuildID);
+// Connect to Gateway
+DiscordGateway.connect();
 
-    console.log("Deployed Commands!");
+
+// Wait for Ready before (un)registering Commands
+DiscordClient.once(GatewayDispatchEvents.Ready, async ({ data: readyData, api }) => {
+
+    // Register single Command Globally
+    //await api.applicationCommands.createGlobalCommand(DISCORD_APP_USER_ID, COMMAND_PLACEHOLDER);
+    
+    // Register single Command to a specific Guild
+    //await api.applicationCommands.createGuildCommand(DISCORD_APP_USER_ID, 'GUILD_ID_PLACEHOLDER', COMMAND_PLACEHOLDER);
+
+    // Bulk-register all Commands Globally
+    //await api.applicationCommands.bulkOverwriteGlobalCommands(DISCORD_APP_USER_ID, AllCommands);
+    
+    // Bulk-unregister all Commands Globally
+    //await api.applicationCommands.bulkOverwriteGlobalCommands(DISCORD_APP_USER_ID, []);
+
+    console.log("Deployed!");
     process.exit();
+
 });
 
 
-
-
-
-
-/******************************************************************************* */
-// DEBUGGING AND ERROR LOGGING
-// Warnings
-process.on('warning', (warning) => { return console.warn("***WARNING: ", warning); });
-DiscordClient.on('warn', (warning) => { return console.warn("***DISCORD WARNING: ", warning); });
-
-// Unhandled Promise Rejections
-process.on('unhandledRejection', (err) => { return console.error("***UNHANDLED PROMISE REJECTION: ", err); });
-
-// Discord Errors
-DiscordClient.on('error', (err) => { return console.error("***DISCORD ERROR: ", err); });
+//  Debugging and Error Logging
+process.on('warning', console.warn);
+process.on('unhandledRejection', console.error);

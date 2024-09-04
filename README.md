@@ -1,33 +1,54 @@
-A simple template Discord Bot for myself.
+A Discord App Template made by TwilightZebby for himself.
 
-# THE LICENSE
-The License for this Project, and all of TwilightZebby's Projects, can be [found here](https://github.com/TwilightZebby/license/blob/main/license.md)
+# LICENSE
+The license for this project, as well as all other projects by TwilightZebby, can be [found here](https://github.com/TwilightZebby/license/blob/main/license.md).
 
 ---
 
 # Setup Guide
-*Assumes you've already cloned this, and have NodeJS*
+*Assumes you've already cloned this, and have NodeJS v20*
 
-1. [Install Discord.JS](https://old.discordjs.dev/#/docs/discord.js/main/general/welcome) (Currently this template is based on [D.JS v14.12.1](https://old.discordjs.dev/#/docs/discord.js/14.12.1/general/welcome))
-2. Ensure you have the following Folders ***in the root*** - as these are where the Bot will look for the Commands and Interactions
-    - `./Interactions/Buttons/`
-    - `./Interactions/ContextCommands/`
-    - `./Interactions/Modals/`
-    - `./Interactions/Selects/`
-    - `./Interactions/SlashCommands/`
-    - `./TextCommands/`
-3. Create a `config.js` file ***in the root***, with the following information (replace strings with relevant data of course):
+1. Run `npm install` to install the dependencies defined in the `package.json` file.
+2. Ensure you have the following directories/folders - as these are where this App will look for Commands & Interactions:
+  - `./Commands/ContextCommands/`
+  - `./Commands/SlashCommands/`
+  - `./Commands/TextCommands/`
+  - `./Interactions/Buttons/`
+  - `./Interactions/Modals/`
+  - `./Interactions/Selects/`
+3. Create a `config.js` file ***in the root*** (ie: `./config.js`), with the following information (replacing strings with relevant data of course):
 
 ```js
-exports.TOKEN = 'BOT-TOKEN'; // Your Discord Bot's Token, found on Developer Portal
+// DO NOT LEAK TOKENS
+export const DISCORD_TOKEN = 'APP-TOKEN';
 
-exports.PREFIX = 'PREFIX'; // Prefix for TEXT BASED Commands
+/** User ID of the App this code is for - ie: the App's Bot User */
+export const DISCORD_APP_USER_ID = 'APP-BOT-USER-ID';
 
-exports.BotDevID = 'USERID'; // Discord User ID of the Bot's Developer - for "Bot Developer Only" commands
+/** User ID of the App's Developer */
+export const APP_DEVELOPER_USER_ID = 'DEVS-USER-ID';
 
-exports.ErrorLogGuildID = "GUILDID"; // Discord Guild ID for the Guild you use to test in
+/** Prefix for classic style text-based Commands */
+export const TEXT_COMMAND_PREFIX = 'TEXT-PREFIX';
+
+/** Webhook ID for the Webhook in the above Logging Channel */
+export const LOG_WEBHOOK_ID = 'WEBHOOK-ID';
+
+/** Webhook's Token for the Webhook in the above Logginc Channel. DO NOT LEAK */
+export const LOG_WEBHOOK_TOKEN = 'WEBHOOK-TOKEN';
 ```
 
-4. Run the `./deployCommands.js` file ( `node deployCommands.js` ) to register the Application Commands to/from Discord's API.
-    - *This only needs to be run once, you do not need this running for the functionality of the Bot!*
-5. Run `./index.js` to run the actual Bot. ( `node index.js` )
+---
+
+## Deploying Slash & Context Commands
+To make deploying Slash & Context Commands easier, a `./deployCommands.js` file is included.
+
+Just tweak it to your liking, and run `node deployCommands.js` to run that file ONCE.
+
+> [!NOTE]
+> You do **NOT** need to keep this file running. You only need to run it ONCE to register, unregister, or edit Slash/Context Commands.
+
+---
+
+## Running the App
+To bring the App online, simply run `node index.js` to start up the actual App!
