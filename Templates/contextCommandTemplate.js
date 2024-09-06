@@ -1,8 +1,8 @@
-import { LocalizationMap, RESTPostAPIApplicationCommandsJSONBody, ApplicationCommandType, InteractionContextType, ApplicationIntegrationType } from 'discord-api-types/v10';
+import { ApplicationCommandType, InteractionContextType, ApplicationIntegrationType } from 'discord-api-types/v10';
 import { API, MessageFlags } from '@discordjs/core';
 
 
-module.exports = {
+export const ContextTemplate = {
     /** Command's Name, supports both upper- and lower-case, and spaces
      * @type {String}
      */
@@ -14,7 +14,7 @@ module.exports = {
     description: "Command Description",
 
     /** Command's Localised Descriptions
-     * @type {LocalizationMap}
+     * @type {import('discord-api-types/v10').LocalizationMap}
      */
     localizedDescriptions: {
         'en-GB': 'British Description',
@@ -42,10 +42,10 @@ module.exports = {
     
 
     /** Get the Command's data in a format able to be registered with via Discord's API
-     * @returns {RESTPostAPIApplicationCommandsJSONBody}
+     * @returns {import('discord-api-types/v10').RESTPostAPIApplicationCommandsJSONBody}
      */
     getRegisterData() {
-        /** @type {RESTPostAPIApplicationCommandsJSONBody} */
+        /** @type {import('discord-api-types/v10').RESTPostAPIApplicationCommandsJSONBody} */
         const CommandData = {};
 
         CommandData.name = this.name;

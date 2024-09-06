@@ -11,16 +11,18 @@ const DiscordRest = new REST({ version: '10' }).setToken(DISCORD_TOKEN);
 /** Required Intents */
 const RequestedIntents = GatewayIntentBits.Guilds | GatewayIntentBits.GuildIntegrations;
 
+/** WebSocket Manager for interacting with Discord API. Only exporting so I can use `.connect()` in index file */
+const DiscordGateway = new WebSocketManager({
+    token: DISCORD_TOKEN,
+    intents: RequestedIntents,
+    rest: DiscordRest,
+});
+
+DiscordGateway.connect();
+
 
 // *******************************
 //  Exports
-
-/** WebSocket Manager for interacting with Discord API. Only exporting so I can use `.connect()` in index file */
-export const DiscordGateway = new WebSocketManager({
-    token: DISCORD_TOKEN,
-    intents: RequestedIntents,
-    DiscordRest,
-});
 
 /** Client for Discord's API events & stuff */
 export const DiscordClient = new Client({ DiscordRest, DiscordGateway });
