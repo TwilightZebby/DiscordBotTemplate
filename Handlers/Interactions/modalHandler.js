@@ -1,7 +1,7 @@
-import { APIModalSubmitInteraction, MessageFlags, APIUser } from 'discord-api-types/v10';
+import { MessageFlags } from 'discord-api-types/v10';
 import { API } from '@discordjs/core';
-import { UtilityCollections } from '../../Utility/utilityConstants';
-import { logError } from '../../Utility/loggingModule';
+import { UtilityCollections } from '../../Utility/utilityConstants.js';
+import { logError } from '../../Utility/loggingModule.js';
 
 
 // *******************************
@@ -9,7 +9,7 @@ import { logError } from '../../Utility/loggingModule';
 
 /**
  * Handles & Runs Buttons
- * @param {APIModalSubmitInteraction} interaction 
+ * @param {import('discord-api-types/v10').APIModalSubmitInteraction} interaction 
  * @param {API} api 
  * 
  * @returns {Boolean|'INVALID'|'COOLDOWN_ACTIVE'|'ERROR_GENERIC'} True if Interaction found, or custom error otherwise
@@ -30,7 +30,7 @@ export async function handleModal(interaction, api) {
 
 
     // Since `user` and `member` fields can be missing depending on the context the Interaction was invoked in - do a check here for ease
-    /** @type {APIUser} */
+    /** @type {import('discord-api-types/v10').APIUser} */
     let interactionUser;
     
     if ( interaction.user == undefined ) { interactionUser = interaction.member.user; }

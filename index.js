@@ -1,19 +1,19 @@
 import { GatewayDispatchEvents, PresenceUpdateStatus } from '@discordjs/core';
+import { InteractionType, MessageType } from 'discord-api-types/v10';
+import { isChatInputApplicationCommandInteraction, isContextMenuApplicationCommandInteraction, isMessageComponentButtonInteraction, isMessageComponentSelectMenuInteraction } from 'discord-api-types/utils';
 
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 
-import { DiscordGateway, DiscordClient, UtilityCollections } from './Utility/utilityConstants';
-import { InteractionType, MessageType } from 'discord-api-types/v10';
-import { handleTextCommand } from './Handlers/Commands/textCommandHandler';
-import { isChatInputApplicationCommandInteraction, isContextMenuApplicationCommandInteraction, isMessageComponentButtonInteraction, isMessageComponentSelectMenuInteraction } from 'discord-api-types/utils';
-import { handleSlashCommand } from './Handlers/Commands/slashCommandHandler';
-import { handleContextCommand } from './Handlers/Commands/contextCommandHandler';
-import { handleButton } from './Handlers/Interactions/buttonHandler';
-import { handleSelect } from './Handlers/Interactions/selectHandler';
-import { handleAutocomplete } from './Handlers/Interactions/autocompleteHandler';
-import { handleModal } from './Handlers/Interactions/modalHandler';
-import { logInfo } from './Utility/loggingModule';
+import { DiscordGateway, DiscordClient, UtilityCollections } from './Utility/utilityConstants.js';
+import { handleTextCommand } from './Handlers/Commands/textCommandHandler.js';
+import { handleSlashCommand } from './Handlers/Commands/slashCommandHandler.js';
+import { handleContextCommand } from './Handlers/Commands/contextCommandHandler.js';
+import { handleButton } from './Handlers/Interactions/buttonHandler.js';
+import { handleSelect } from './Handlers/Interactions/selectHandler.js';
+import { handleAutocomplete } from './Handlers/Interactions/autocompleteHandler.js';
+import { handleModal } from './Handlers/Interactions/modalHandler.js';
+import { logInfo } from './Utility/loggingModule.js';
 
 
 
@@ -164,9 +164,7 @@ const SystemMessageTypes = [
     MessageType.RoleSubscriptionPurchase, MessageType.InteractionPremiumUpsell, MessageType.StageStart, MessageType.StageEnd, MessageType.StageSpeaker,
     MessageType.StageTopic, MessageType.GuildApplicationPremiumSubscription, MessageType.GuildIncidentAlertModeEnabled,
     MessageType.GuildIncidentAlertModeDisabled, MessageType.GuildIncidentReportRaid, MessageType.GuildIncidentReportFalseAlarm,
-    // The following haven't been added to Discord API Types yet? :thinking:
-    44, // PURCHASE_NOTIFICATION
-    46 // POLL_RESULT
+    MessageType.PurchaseNotification, MessageType.PollResult
 ];
 
 DiscordClient.on(GatewayDispatchEvents.MessageCreate, async ({ data: message, api }) => {

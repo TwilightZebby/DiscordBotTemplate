@@ -1,4 +1,4 @@
-import { LocalizationMap, RESTPostAPIApplicationCommandsJSONBody, APIChatInputApplicationCommandInteraction, ApplicationCommandType, InteractionContextType, ApplicationIntegrationType } from 'discord-api-types/v10';
+import { LocalizationMap, RESTPostAPIApplicationCommandsJSONBody, ApplicationCommandType, InteractionContextType, ApplicationIntegrationType } from 'discord-api-types/v10';
 import { API, MessageFlags } from '@discordjs/core';
 
 
@@ -63,9 +63,9 @@ module.exports = {
     },
 
     /** Runs the Command
-     * @param {APIChatInputApplicationCommandInteraction} interaction 
+     * @param {import('discord-api-types/v10').APIChatInputApplicationCommandInteraction} interaction 
      * @param {API} api
-     * @param {APIUser} interactionUser 
+     * @param {import('discord-api-types/v10').APIUser} interactionUser 
      */
     async executeCommand(interaction, api, interactionUser) {
         await api.interactions.reply(interaction.id, interaction.token, { flags: MessageFlags.Ephemeral, content: "This Command has not yet been implemented yet!" });

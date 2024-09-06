@@ -1,6 +1,6 @@
 import { GatewayDispatchEvents } from "discord-api-types/v10";
-import { DiscordClient, DiscordGateway } from "./Utility/utilityConstants";
-import { DISCORD_APP_USER_ID } from "./config";
+import { DiscordClient, DiscordGateway } from "./Utility/utilityConstants.js";
+import { DISCORD_APP_USER_ID } from "./config.js";
 
 // SLASH COMMANDS
 //.

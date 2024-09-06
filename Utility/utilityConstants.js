@@ -1,8 +1,8 @@
 import { REST } from '@discordjs/rest';
 import { WebSocketManager } from '@discordjs/ws';
 import { GatewayIntentBits, Client } from '@discordjs/core';
-import { DISCORD_TOKEN } from '../config';
 import { Collection } from '@discordjs/collection';
+import { DISCORD_TOKEN } from '../config.js';
 
 
 // REST Manager

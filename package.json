@@ -1,8 +1,9 @@
 {
   "name": "discordbottemplate",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "TwilightZebby's personal Discord App Template",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +30,6 @@
     "@discordjs/core": "^2.0.0",
     "@discordjs/rest": "^2.4.0",
     "@discordjs/ws": "^2.0.0",
-    "discord-api-types": "^0.37.99"
+    "discord-api-types": "^0.37.100"
   }
 }
