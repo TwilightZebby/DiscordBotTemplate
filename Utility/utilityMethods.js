@@ -1,3 +1,6 @@
+import { InteractionContextType, PermissionFlagsBits } from 'discord-api-types/v10';
+
+
 // *******************************
 //  Exports
 
@@ -26,19 +29,58 @@ export function getHighestName(userMember, ignoreNicknames) {
     let isPomelo = true;
 
     // Pomelo checks. Basically, if an App, they're not on Pomelo!
-    if ( (userMember instanceof APIUser) && userMember.bot ) { isPomelo = false; }
-    if ( (userMember instanceof APIGuildMember) && userMember.user?.bot ) { isPomelo = false; }
+    if ( (userMember.roles == undefined) && userMember.bot ) { isPomelo = false; }
+    if ( (userMember.roles != undefined) && userMember.user?.bot ) { isPomelo = false; }
 
     // Usernames
-    highestName = userMember instanceof APIGuildMember ? `@${userMember.user?.username}${isPomelo ? '' : `#${userMember.user?.discriminator}`}`
-        : `@${userMember.username}${isPomelo ? '' : `#${userMember.discriminator}`}`;
+    highestName = userMember.roles != undefined && userMember.user != null ? `${userMember.user?.username}${isPomelo ? '' : `#${userMember.user?.discriminator}`}`
+        : `${userMember.username}${isPomelo ? '' : `#${userMember.discriminator}`}`;
 
     // Display Names override Usernames
-    if ( (userMember instanceof APIUser) && (userMember.global_name != null) ) { highestName = userMember.global_name; }
-    if ( (userMember instanceof APIGuildMember) && (userMember.user.global_name != null) ) { highestName = userMember.user.global_name; }
+    if ( (userMember.roles == undefined) && (userMember.global_name != null) ) { highestName = userMember.global_name; }
+    if ( (userMember.roles != undefined) && (userMember.user?.global_name != null) ) { highestName = userMember.user.global_name; }
 
     // Guild Nicknames override Display Names, if a Guild Member was provided
-    if ( !ignoreNicknames && (userMember instanceof APIGuildMember) && (userMember.nick != null) ) { highestName = userMember.nick; }
+    if ( !ignoreNicknames && (userMember.roles != undefined) && (userMember.nick != null) ) { highestName = userMember.nick; }
 
     return highestName;
+}
+
+/**
+ * Checks if the App can use External Server Emojis in its Interaction responses
+ * @param {import('discord-api-types/v10').APIInteraction} interaction 
+ * 
+ * @returns {Boolean} True if App does have USE_EXTERNAL_EMOJIS Permission
+ */
+export function checkExternalEmojiPermission(interaction) {
+    let hasPermission = false;
+
+    if ( (interaction.app_permissions & PermissionFlagsBits.UseExternalEmojis) == PermissionFlagsBits.UseExternalEmojis ) { hasPermission = true; }
+
+    return hasPermission;
+}
+
+/**
+ * Convert raw Guild Feature Flags into title case
+ * @param {String} featureFlag
+ * 
+ * @returns {String}
+ */
+export function titleCaseGuildFeature(featureFlag) {
+    return featureFlag.toLowerCase()
+    .replace(/guild/, "server")
+    .split("_")
+    .map(subString => subString.charAt(0).toUpperCase() + subString.slice(1))
+    .join(" ");
+}
+
+/**
+ * Helper method for seeing if an interaction was triggered in a Guild App or User App context
+ * @param {import('discord-api-types/v10').APIInteraction} interaction
+ * 
+ * @returns {'GUILD_CONTEXT'|'USER_CONTEXT'} Context this was triggered in
+ */
+export function getInteractionContext(interaction) {
+    if ( interaction.context === InteractionContextType.Guild ) { return 'GUILD_CONTEXT'; }
+    else { return 'USER_CONTEXT'; }
 }
