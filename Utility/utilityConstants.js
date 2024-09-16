@@ -25,7 +25,7 @@ DiscordGateway.connect();
 //  Exports
 
 /** Client for Discord's API events & stuff */
-export const DiscordClient = new Client({ DiscordRest, DiscordGateway });
+export const DiscordClient = new Client({ rest: DiscordRest, gateway: DiscordGateway });
 
 /** Utility & Command/Interaction Collections */
 export const UtilityCollections = {
