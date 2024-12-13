@@ -30,6 +30,6 @@
     "@discordjs/core": "^2.0.0",
     "@discordjs/rest": "^2.4.0",
     "@discordjs/ws": "^2.0.0",
-    "discord-api-types": "^0.37.101"
+    "discord-api-types": "^0.37.111"
   }
 }
